@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Film Directors`,
+    title: `Film Directors of Belarus`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
