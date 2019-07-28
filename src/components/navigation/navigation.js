@@ -5,7 +5,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
 import { Link } from 'gatsby';
-import SimpleMenu from '../simpleMenu/simpleMenu';
+import LanguageSelect from '../languageSelect/languageSelect';
 
 const useStyles = makeStyles(() => ({
   title: {
@@ -48,7 +48,7 @@ export default function Navigation({ siteTitle }) {
             LIST OF DIRECTORS
           </Link>
         </Button>
-        <SimpleMenu />
+        <LanguageSelect />
       </Toolbar>
     </AppBar>
   );
