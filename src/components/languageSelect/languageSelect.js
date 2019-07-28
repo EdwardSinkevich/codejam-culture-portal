@@ -3,6 +3,12 @@ import { makeStyles } from '@material-ui/core/styles';
 import NativeSelect from '@material-ui/core/NativeSelect';
 
 const useStyles = makeStyles(() => ({
+  bgOption: {
+    color: 'black',
+  },
+}));
+
+const useNativeSelectStyles = makeStyles(() => ({
   root: {
     display: 'flex',
     flexWrap: 'wrap',
@@ -15,13 +21,11 @@ const useStyles = makeStyles(() => ({
   icon: {
     display: 'none',
   },
-  bgOption: {
-    color: 'black',
-  },
 }));
 
 export default function LanguageSelect() {
-  const classes = useStyles();
+  const nativeSelectStyles = useNativeSelectStyles();
+  const optionsStyles = useStyles();
   const [language, setLanguage] = React.useState('RU');
 
   const handleChange = () => (event) => {
@@ -33,12 +37,12 @@ export default function LanguageSelect() {
       value={language}
       onChange={handleChange('language')}
       name="language"
-      classes={classes}
+      classes={nativeSelectStyles}
       inputProps={{ 'aria-label': 'language' }}
     >
-      <option className={classes.bgOption} value="EN">EN</option>
-      <option className={classes.bgOption} value="RU">RU</option>
-      <option className={classes.bgOption} value="BY">BY</option>
+      <option className={optionsStyles.bgOption} value="EN">EN</option>
+      <option className={optionsStyles.bgOption} value="RU">RU</option>
+      <option className={optionsStyles.bgOption} value="BY">BY</option>
     </NativeSelect>
   );
 }
