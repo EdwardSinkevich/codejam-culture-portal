@@ -5,6 +5,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
 import { Link } from 'gatsby';
+import Box from '@material-ui/core/Box';
 import LanguageSelect from '../languageSelect/languageSelect';
 
 const useStyles = makeStyles(() => ({
@@ -15,6 +16,9 @@ const useStyles = makeStyles(() => ({
   link: {
     color: 'white',
     textDecoration: 'none',
+  },
+  headerContainer: {
+    alignSelf: 'center',
   },
 }));
 
@@ -31,25 +35,27 @@ export default function Navigation({ siteTitle }) {
   };
 
   return (
-    <AppBar>
-      <Toolbar>
-        <h1 className={classes.title}>
-          <Link to="/" className={classes.link}>
-            {siteTitle}
-          </Link>
-        </h1>
-        <Button color="inherit">
-          <Link to="/" className={classes.link}>
-            HOME
-          </Link>
-        </Button>
-        <Button color="inherit">
-          <Link to="/directors/" className={classes.link}>
-            LIST OF DIRECTORS
-          </Link>
-        </Button>
-        <LanguageSelect />
-      </Toolbar>
+    <AppBar style={{ backgroundColor: '#008080' }}>
+      <Box className={classes.headerContainer} width="100%" maxWidth={1800}>
+        <Toolbar>
+          <h1 className={classes.title}>
+            <Link to="/" className={classes.link}>
+              {siteTitle}
+            </Link>
+          </h1>
+          <Button color="inherit">
+            <Link to="/" className={classes.link}>
+              HOME
+            </Link>
+          </Button>
+          <Button color="inherit">
+            <Link to="/directors/" className={classes.link}>
+              LIST OF DIRECTORS
+            </Link>
+          </Button>
+          <LanguageSelect />
+        </Toolbar>
+      </Box>
     </AppBar>
   );
 }

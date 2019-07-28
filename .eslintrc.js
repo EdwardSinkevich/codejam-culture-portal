@@ -22,5 +22,6 @@ module.exports = {
     "rules": {
         "react/jsx-filename-extension": 0,
         "react/no-unescaped-entities": 0,
+        "max-len": ["error", { "code": 200 }]
     }
 };
