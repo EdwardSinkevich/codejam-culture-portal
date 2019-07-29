@@ -62,7 +62,7 @@ const Main = () => {
               черно-белого немого фильма «Лесная быль», который сняли в 1926 году в Ленинграде, так как
               в то время производственная база «Белгоскино» отсутствовала. В столицу Беларуси киностудия
               переехала в 1939 году. Еще через 9 лет она получила нынешнее название –
-              <a target="_blank" href="http://www.belarusfilm.by" rel="noopener">«Беларусьфильм»</a>
+               <a target="_blank" href="http://www.belarusfilm.by" rel="noopener">«Беларусьфильм»</a>
               .
             </p>
             <p className={classes.historyParagraph}>

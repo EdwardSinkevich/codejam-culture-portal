@@ -1,4 +1,9 @@
 module.exports = {
+  siteMetadata: {
+    title: ``,
+    description: ``,
+    author: `team29`,
+  },
   pathPrefix: '/gatsby-i18n/gatsby-starter-i18next',
   plugins: [
     'gatsby-plugin-react-helmet',

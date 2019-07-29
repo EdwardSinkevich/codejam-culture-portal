@@ -11,7 +11,7 @@ const IndexPage = () => (
   <I18n>
     {t => (
       <Layout>
-        {/* <SEO title="Home" /> */}
+        <SEO title="Home" />
         <Main />
       </Layout>
     )}

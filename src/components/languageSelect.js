@@ -28,10 +28,8 @@ const useNativeSelectStyles = makeStyles(() => ({
 const LanguageSelect = ({ changeLng, lng, availableLngs }) => {
   const nativeSelectStyles = useNativeSelectStyles();
   const optionsStyles = useStyles();
-  // const [language, setLanguage] = React.useState('RU');
 
   const handleChange = (event) => {
-    // setLanguage(event.target.value);
     changeLng(event.target.value);
     event.target.parentNode.value = lng;
   };
