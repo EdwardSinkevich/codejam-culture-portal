@@ -2,7 +2,7 @@ exports.frontmatter = {
   path: '/Kudinenko',
   name: 'Андрэй Анатолевіч Кудзіненка',
   date: '20 кастрычніка 1971',
-  img: '../assets/images/kudinenko.jpg',
+  img: 'kudinenko/kudinenko.jpg',
   videoId: 'b5McD6BG-80',
   vita: 'беларускі кінарэжысёр. Сын архітэктара Анатоля Кудзіненкі',
   authorOfTheDay: 'false',

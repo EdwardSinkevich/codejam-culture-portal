@@ -2,7 +2,7 @@ exports.frontmatter = {
   path: '/Marukhin',
   name: 'Юрий Александрович Марухин',
   date: '13 июля 1938 - 20 декабря 2001',
-  img: '../assets/images/marukhin.jpg',
+  img: 'marukhin/marukhin.jpg',
   videoId: '9SCgy424OKc',
   vita: 'Советский и белорусский кинорежиссёр, сценарист, оператор. Заслуженный деятель искусств Белорусской ССР (1974).',
   authorOfTheDay: 'false',

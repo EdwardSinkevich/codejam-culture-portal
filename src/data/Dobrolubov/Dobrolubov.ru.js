@@ -2,7 +2,7 @@ exports.frontmatter = {
   path: '/Dobrolubov',
   name: 'Игорь Михайлович Добролюбов',
   date: '22 октября 1933 - 19 июля 2010',
-  img: '../assets/images/dobrolubov.jpg',
+  img: 'dobrolubov/dobrolubov.jpg',
   videoId: 'wNuYlYKSylU',
   vita: 'Белорусский советский кинорежиссёр, актёр, педагог и сценарист, народный артист Белорусской ССР (1985). Член КПСС с 1963 года',
   authorOfTheDay: 'true',

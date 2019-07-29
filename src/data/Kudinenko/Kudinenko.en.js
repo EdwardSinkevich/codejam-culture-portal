@@ -2,7 +2,7 @@ exports.frontmatter = {
   path: '/Kudinenko',
   name: 'Andrey Anatolyevich Kudinenko',
   date: 'October 20, 1971',
-  img: '../assets/images/kudinenko.jpg',
+  img: 'kudinenko/kudinenko.jpg',
   videoId: 'b5McD6BG-80',
   vita: 'Belarusian film director. The son of the architect Anatoly Kudinenko',
   authorOfTheDay: 'false',
