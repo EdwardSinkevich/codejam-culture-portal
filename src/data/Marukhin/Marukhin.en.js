@@ -2,7 +2,7 @@ exports.frontmatter = {
   path: '/Marukhin',
   name: 'Yuri Alexandrovich Marukhin',
   date: 'July 13, 1938 - December 20, 2001',
-  img: '../assets/images/marukhin.jpg',
+  img: 'marukhin/marukhin.jpg',
   videoId: '9SCgy424OKc',
   vita: 'Belarusian Soviet director, screenwriter, operator. Honored art worker of the Belarusian SSR (1974).',
   authorOfTheDay: 'false',

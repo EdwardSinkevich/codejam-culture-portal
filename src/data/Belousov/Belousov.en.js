@@ -2,7 +2,7 @@ exports.frontmatter = {
   path: '/Belousov',
   name: 'Oleg Pavlovich Belousov',
   date: 'November 13, 1938 - March 26, 2009',
-  img: '../assets/images/belousov.jpg',
+  img: 'belousov/belousov.jpg',
   videoId: '_bw31-y7Dg',
   vita: 'Belarusian Soviet director, screenwriter, operator. Honored art worker of the Belarusian SSR (1974).',
   authorOfTheDay: 'false',

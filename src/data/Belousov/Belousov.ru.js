@@ -2,7 +2,7 @@ exports.frontmatter = {
   path: '/Belousov',
   name: 'Олег Павлович Белоусов',
   date: '13 ноября 1945 - 26 марта 2009',
-  img: '../assets/images/belousov.jpg',
+  img: 'belousov/belousov.jpg',
   videoId: '_bw31-y7Dg',
   vita: 'Cоветский и белорусский художник-мультипликатор, сценарист, режиссёр',
   authorOfTheDay: 'false',

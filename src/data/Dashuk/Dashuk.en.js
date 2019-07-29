@@ -2,7 +2,7 @@ exports.frontmatter = {
   path: '/Dashuk',
   name: 'Victor Nikiforovich Dashuk',
   date: 'September 16, 1938',
-  img: '../assets/images/daschuk.jpg',
+  img: 'daschuk/daschuk.jpg',
   videoId: '8Lzi80kxo4E',
   vita: 'Soviet Belarusian documentary filmmaker. Winner of the State Prize of the USSR (1985), Honored Artist of the Byelorussian SSR (1977), National Artist of the Byelorussian SSR (1989). Member of the CPSU since 1976',
   authorOfTheDay: 'false',

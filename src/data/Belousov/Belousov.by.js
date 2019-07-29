@@ -2,7 +2,7 @@ exports.frontmatter = {
   path: '/Belousov',
   name: 'Алег Паўлавіч Белавусаў',
   date: '16 лістапада 1945 - 26 сакавіка 2009',
-  img: '../assets/images/belousov.jpg',
+  img: 'belousov/belousov.jpg',
   videoId: '_bw31-y7Dg',
   vita: 'Беларускі аніматар, сцэнарыст, кінарэжысёр',
   authorOfTheDay: 'false',

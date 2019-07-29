@@ -2,7 +2,7 @@ exports.frontmatter = {
   path: '/Dobrolubov',
   name: 'Igor Mikhailovich Dobrolyubov',
   date: 'October 22, 1933 - July 19, 2010',
-  img: '../assets/images/dobrolubov.jpg',
+  img: 'dobrolubov/dobrolubov.jpg',
   videoId: 'wNuYlYKSylU',
   vita: 'Belarusian Soviet film director, actor, teacher and screenwriter, National Artist of the Byelorussian SSR (1985). Member of the CPSU since 1963',
   authorOfTheDay: 'true',

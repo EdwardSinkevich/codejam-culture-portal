@@ -2,7 +2,7 @@ exports.frontmatter = {
   path: '/Marukhin',
   name: 'Юрый Аляксандравіч Марухін',
   date: '13 ліпеня 1938 - 20 снежня 2001',
-  img: '../assets/images/marukhin.jpg',
+  img: 'marukhin/marukhin.jpg',
   videoId: '9SCgy424OKc',
   vita: 'Cавецкі і беларускі кінарэжысёр, сцэнарыст, аператар і кампазітар, заслужаны дзеяч мастацтваў Беларускай ССР (1974).',
   authorOfTheDay: 'false',

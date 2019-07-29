@@ -2,7 +2,7 @@ exports.frontmatter = {
   path: '/Dobrolubov',
   name: 'Ігар Міхайлавіч Дабралюбаў',
   date: '22 кастрычніка 1933 - 19 ліпеня 2010',
-  img: '../assets/images/dobrolubov.jpg',
+  img: 'dobrolubov/dobrolubov.jpg',
   videoId: 'wNuYlYKSylU',
   vita: 'беларускі рэжысёр, сцэнарыст, педагог, народны артыст Беларускай ССР (1985). Член КПСС з 1963 года',
   authorOfTheDay: 'true',

@@ -2,7 +2,7 @@ exports.frontmatter = {
   path: '/Dashuk',
   name: 'Віктар Нічыпаравіч Дашук',
   date: '16 верасня 1938',
-  img: '../assets/images/daschuk.jpg',
+  img: 'daschuk/daschuk.jpg',
   videoId: '8Lzi80kxo4E',
   vita: 'Савецкі беларускі кінарэжысёр-дакументаліст. Лаўрэат Дзяржаўнай прэміі СССР (1985), Заслужаны дзеяч мастацтваў Беларускай ССР (1977), Народны артыст Беларускай ССР (1989). Член КПСС з 1976 года',
   authorOfTheDay: 'false',
