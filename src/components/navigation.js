@@ -6,7 +6,10 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
 import { Link } from 'gatsby';
 import Box from '@material-ui/core/Box';
-import LanguageSelect from '../languageSelect/languageSelect';
+import LanguageSelect from './languageSelect';
+import { Language } from 'gatsby-plugin-i18next';
+import { translate } from 'react-i18next';
+
 
 const useStyles = makeStyles(() => ({
   title: {
@@ -22,9 +25,9 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-export default function Navigation({ siteTitle }) {
-  const classes = useStyles();
+const Navigation = ({ siteTitle, data, t }) => {
 
+  const classes = useStyles();
 
   Navigation.propTypes = {
     siteTitle: PropTypes.string,
@@ -45,12 +48,12 @@ export default function Navigation({ siteTitle }) {
           </h1>
           <Button color="inherit">
             <Link to="/" className={classes.link}>
-              HOME
+              {t('home')}
             </Link>
           </Button>
           <Button color="inherit">
             <Link to="/directors/" className={classes.link}>
-              LIST OF DIRECTORS
+            {t('directorsList')}
             </Link>
           </Button>
           <LanguageSelect />
@@ -59,3 +62,9 @@ export default function Navigation({ siteTitle }) {
     </AppBar>
   );
 }
+
+Navigation.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+export default translate()(Navigation);

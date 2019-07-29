@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import bgImage from '../../images/film-tapes.jpg';
+import bgImage from '../images/film-tapes.jpg';
 
 const useStyles = makeStyles(() => ({
   bgImage: {
@@ -42,7 +42,7 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-export default function Main() {
+const Main = () => {
   const classes = useStyles();
   return (
     <>
@@ -97,3 +97,5 @@ export default function Main() {
     </>
   );
 }
+
+export default Main;
