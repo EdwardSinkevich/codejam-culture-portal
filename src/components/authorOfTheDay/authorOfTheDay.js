@@ -31,6 +31,7 @@ const useStyles = makeStyles(() => ({
   img: {
     gridArea: 'img',
     margin: '0',
+    maxHeight: ' 250px',
   },
   btn: {
     gridArea: 'btn',
