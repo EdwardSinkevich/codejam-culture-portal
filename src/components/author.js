@@ -13,7 +13,7 @@ const authPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Page two" />
+      <SEO title="Author page" />
       <main>
         <h1>{authorsData.name}</h1>
         <img src={authorImage} alt="Author" />
