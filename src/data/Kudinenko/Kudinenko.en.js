@@ -45,17 +45,17 @@ exports.frontmatter = {
     {
       title: 'Occupation. Mysteries',
       date: '2004',
-      img: '../assets/images/kudinenko_okupacia.jpg',
+      img: 'kudinenko/kudinenko_okupacia.jpg',
     },
     {
       title: 'Raffle',
       date: '2008',
-      img: '../assets/images/kudinenko_rozigrish.jpg',
+      img: 'kudinenko/kudinenko_rozigrish.jpg',
     },
     {
       title: 'Masakra',
       date: '2010',
-      img: '../assets/images/kudinenko_masakra.jpg',
+      img: 'kudinenko/kudinenko_masakra.jpg',
     },
   ],
 };

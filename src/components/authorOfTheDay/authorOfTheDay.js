@@ -77,7 +77,7 @@ export default function AuthorOfTheDay() {
         <p className={classes.vita}>{authOfTheDayData.vita}</p>
         <img className={classes.img} src={authOfTheDayImage} alt="auth of the day" />
         <Button className={classes.btn} variant="contained">
-          <Link className={classes.link} to={`author/${authOfTheDayData.path}`}>Learn More</Link>
+          <Link className={classes.link} to={authOfTheDayData.path}>Learn More</Link>
         </Button>
       </div>
     </Container>

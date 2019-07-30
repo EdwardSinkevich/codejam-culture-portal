@@ -45,37 +45,37 @@ exports.frontmatter = {
     {
       title: "Mom i'm alive",
       date: '1985',
-      img: '../assets/images/dobrolubov_mama_ya_zhiv.jpg',
+      img: 'dobrolubov/dobrolubov_mama_ya_zhiv.jpg',
     },
     {
       title: 'White dews',
       date: '1984',
-      img: '../assets/images/dobrolubov_belye_rosi.jpg',
+      img: 'dobrolubov/dobrolubov_belye_rosi.jpg',
     },
     {
       title: 'Schedule for the day after tomorrow',
       date: '1978',
-      img: '../assets/images/dobrolubov_raspisanie_na_poslezavtra.jpg',
+      img: 'dobrolubov/dobrolubov_raspisanie_na_poslezavtra.jpg',
     },
     {
       title: 'As a secret to the whole world',
       date: '1976',
-      img: '../assets/images/dobrolubov_po_secrety_vsemy_svety.jpg',
+      img: 'dobrolubov/dobrolubov_po_secrety_vsemy_svety.jpg',
     },
     {
       title: 'Brother',
       date: '1975',
-      img: '../assets/images/dobrolubov_bratushka.jpg',
+      img: 'dobrolubov/dobrolubov_bratushka.jpg',
     },
     {
       title: 'Ivan Makarovich',
       date: '1968',
-      img: '../assets/images/dobrolubov_ivan_makarovich.jpg',
+      img: 'dobrolubov/dobrolubov_ivan_makarovich.jpg',
     },
     {
       title: 'Going to look for',
       date: '1966',
-      img: "../assets/images/dobrolubov_idu_iskat'.jpg",
+      img: 'dobrolubov/dobrolubov_idu_iskat.jpg',
     },
   ],
 };

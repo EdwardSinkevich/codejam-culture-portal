@@ -50,32 +50,32 @@ exports.frontmatter = {
     {
       title: 'Вельмі стары чалавек з вялізнымі крыламі',
       date: '1990',
-      img: '../assets/images/belousov_very_old_man.jpg',
+      img: 'belousov/belousov_very_old_man.jpg',
     },
     {
       title: 'Куб',
       date: '1988',
-      img: '../assets/images/belousov_cube.jpg',
+      img: 'belousov/belousov_cube.jpg',
     },
     {
       title: 'Ладдзя роспачы',
       date: '1987',
-      img: '../assets/images/belousov_ladya_otchainiya.jpg',
+      img: 'belousov/belousov_ladya_otchainiya.jpg',
     },
     {
       title: 'Песня пра зубра',
       date: '1982',
-      img: '../assets/images/belousov_pesnia_o_zubre.jpg',
+      img: 'belousov/belousov_pesnia_o_zubre.jpg',
     },
     {
       title: 'Казка пра вясёлага клоуна',
       date: '1980',
-      img: '../assets/images/belousov_o_veselom_kloune.jpg',
+      img: 'belousov/belousov_o_veselom_kloune.jpg',
     },
     {
       title: 'Несцерка',
       date: '1980',
-      img: '../assets/images/belousov_nesterka.jpg',
+      img: 'belousov/belousov_nesterka.jpg',
     },
   ],
 };

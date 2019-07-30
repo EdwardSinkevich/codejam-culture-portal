@@ -25,5 +25,6 @@ module.exports = {
         "max-len": ["error", { "code": 200 }],
         "global-require": 0,
         "import/no-dynamic-require": 0,
+        "react/forbid-prop-types": 0,
     }
 };
