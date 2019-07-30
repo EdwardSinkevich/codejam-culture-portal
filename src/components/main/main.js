@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import HistoricalPortalDescription from '../historicalPortalDescription/historicalPortalDesc';
 import AuthorOfTheDay from '../authorOfTheDay/authorOfTheDay';
+import DevelopersTeam from '../developersTeam/developersTeam';
 
 const useStyles = makeStyles(() => ({
   mainSection: {
@@ -18,6 +19,9 @@ export default function Main() {
       </section>
       <section className={classes.mainSection}>
         <AuthorOfTheDay />
+      </section>
+      <section className={classes.mainSection}>
+        <DevelopersTeam />
       </section>
     </>
   );

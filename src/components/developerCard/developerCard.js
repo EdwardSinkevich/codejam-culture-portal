@@ -10,11 +10,11 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   card: {
-    maxWidth: 345,
+    maxWidth: 250,
   },
 });
 
-export default function DeveloperCard() {
+export default function DeveloperCard({ image }) {
   const classes = useStyles();
 
   return (
@@ -23,8 +23,8 @@ export default function DeveloperCard() {
         <CardMedia
           component="img"
           alt="Contemplative Reptile"
-          height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
+          height="320"
+          image={image}
           title="Contemplative Reptile"
         />
         <CardContent>
