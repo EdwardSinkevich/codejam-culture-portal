@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import bgImage from '../images/film-tapes.jpg';
 import HistoricalPortalDescription from './historicalPortalDesc';
-import AuthorOfTheDay from './authorOfTheDay';
+// import AuthorOfTheDay from './authorOfTheDay';
 
 const useStyles = makeStyles(() => ({
   mainSection: {

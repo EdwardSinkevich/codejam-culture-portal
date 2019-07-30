@@ -2,7 +2,7 @@ exports.frontmatter = {
   path: '/Belousov',
   name: 'Олег Павлович Белоусов',
   date: '13 ноября 1945 - 26 марта 2009',
-  img: '../assets/images/belousov.jpg',
+  img: 'belousov/belousov.jpg',
   videoId: '_bw31-y7Dg',
   vita: 'Cоветский и белорусский художник-мультипликатор, сценарист, режиссёр',
   authorOfTheDay: 'false',
@@ -50,32 +50,32 @@ exports.frontmatter = {
     {
       title: 'Очень старый человек с огромными крыльями',
       date: '1990',
-      img: '../assets/images/belousov_very_old_man.jpg',
+      img: 'belousov/belousov_very_old_man.jpg',
     },
     {
       title: 'Куб',
       date: '1988',
-      img: '../assets/images/belousov_cube.jpg',
+      img: 'belousov/belousov_cube.jpg',
     },
     {
       title: 'Ладья отчаяния',
       date: '1987',
-      img: '../assets/images/belousov_ladya_otchainiya.jpg',
+      img: 'belousov/belousov_ladya_otchainiya.jpg',
     },
     {
       title: 'Песнь о зубре',
       date: '1982',
-      img: '../assets/images/belousov_pesnia_o_zubre.jpg',
+      img: 'belousov/belousov_pesnia_o_zubre.jpg',
     },
     {
       title: 'Сказка о веселом клоуне',
       date: '1980',
-      img: '../assets/images/belousov_o_veselom_kloune.jpg',
+      img: 'belousov/belousov_o_veselom_kloune.jpg',
     },
     {
       title: 'Нестерка',
       date: '1980',
-      img: '../assets/images/belousov_nesterka.jpg',
+      img: 'belousov/belousov_nesterka.jpg',
     },
   ],
 };

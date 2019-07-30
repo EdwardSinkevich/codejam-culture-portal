@@ -25,7 +25,7 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-const Navigation = ({ siteTitle, data, t }) => {
+const Navigation = ({ siteTitle, data, t, lng }) => {
 
   const classes = useStyles();
 
@@ -42,7 +42,7 @@ const Navigation = ({ siteTitle, data, t }) => {
       <Box className={classes.headerContainer} width="100%" maxWidth={1800}>
         <Toolbar>
           <h1 className={classes.title}>
-            <Link to="/" className={classes.link}>
+            <Link to="/"  className={classes.link}>
               {siteTitle}
             </Link>
           </h1>

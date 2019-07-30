@@ -2,7 +2,7 @@ exports.frontmatter = {
   path: '/Kudinenko',
   name: 'Андрей Анатольевич Кудиненко',
   date: '20 октября 1971',
-  img: '../assets/images/kudinenko.jpg',
+  img: 'kudinenko/kudinenko.jpg',
   videoId: 'b5McD6BG-80',
   vita: 'Белорусский кинорежиссёр. Сын архитектора Анатолия Кудиненко',
   authorOfTheDay: 'false',
@@ -45,17 +45,17 @@ exports.frontmatter = {
     {
       title: 'Оккупация. Мистерии',
       date: '2004',
-      img: '../assets/images/kudinenko_okupacia.jpg',
+      img: 'kudinenko/kudinenko_okupacia.jpg',
     },
     {
       title: 'Розыгрыш',
       date: '2008',
-      img: '../assets/images/kudinenko_rozigrish.jpg',
+      img: 'kudinenko/kudinenko_rozigrish.jpg',
     },
     {
       title: 'Масакра',
       date: '2010',
-      img: '../assets/images/kudinenko_masakra.jpg',
+      img: 'kudinenko/kudinenko_masakra.jpg',
     },
   ],
 };

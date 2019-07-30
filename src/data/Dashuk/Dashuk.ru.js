@@ -2,7 +2,7 @@ exports.frontmatter = {
   path: '/Dashuk',
   name: 'Виктор Никифорович Дашук',
   date: '16 сентрября 1938',
-  img: '../assets/images/daschuk.jpg',
+  img: 'daschuk/daschuk.jpg',
   videoId: '8Lzi80kxo4E',
   vita: 'Советский белорусский кинорежиссёр-документалист. Лауреат Государственной премии СССР (1985), Заслуженный деятель искусств Белорусской ССР (1977), Народный артист Белорусской ССР (1989). Член КПСС с 1976 года',
   authorOfTheDay: 'false',
@@ -45,7 +45,7 @@ exports.frontmatter = {
     {
       title: 'У войны не женское лицо',
       date: '1980',
-      img: '../assets/images/belousov_very_old_man.jpg',
+      img: 'daschuk/Serial_U_Voiny_Ne_Zhenskoje_Lico.jpg',
     },
   ],
 };

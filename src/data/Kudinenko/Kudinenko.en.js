@@ -2,7 +2,7 @@ exports.frontmatter = {
   path: '/Kudinenko',
   name: 'Andrey Anatolyevich Kudinenko',
   date: 'October 20, 1971',
-  img: '../assets/images/kudinenko.jpg',
+  img: 'kudinenko/kudinenko.jpg',
   videoId: 'b5McD6BG-80',
   vita: 'Belarusian film director. The son of the architect Anatoly Kudinenko',
   authorOfTheDay: 'false',
@@ -45,17 +45,17 @@ exports.frontmatter = {
     {
       title: 'Occupation. Mysteries',
       date: '2004',
-      img: '../assets/images/kudinenko_okupacia.jpg',
+      img: 'kudinenko/kudinenko_okupacia.jpg',
     },
     {
       title: 'Raffle',
       date: '2008',
-      img: '../assets/images/kudinenko_rozigrish.jpg',
+      img: 'kudinenko/kudinenko_rozigrish.jpg',
     },
     {
       title: 'Masakra',
       date: '2010',
-      img: '../assets/images/kudinenko_masakra.jpg',
+      img: 'kudinenko/kudinenko_masakra.jpg',
     },
   ],
 };

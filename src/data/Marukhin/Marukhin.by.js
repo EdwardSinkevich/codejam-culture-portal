@@ -2,7 +2,7 @@ exports.frontmatter = {
   path: '/Marukhin',
   name: 'Юрый Аляксандравіч Марухін',
   date: '13 ліпеня 1938 - 20 снежня 2001',
-  img: '../assets/images/marukhin.jpg',
+  img: 'marukhin/marukhin.jpg',
   videoId: '9SCgy424OKc',
   vita: 'Cавецкі і беларускі кінарэжысёр, сцэнарыст, аператар і кампазітар, заслужаны дзеяч мастацтваў Беларускай ССР (1974).',
   authorOfTheDay: 'false',
@@ -49,37 +49,37 @@ exports.frontmatter = {
     {
       title: 'Любімая',
       date: '1965',
-      img: '../assets/images/marukhin_darling(1965).jpg',
+      img: 'marukhin/marukhin_darling(1965).jpg',
     },
     {
       title: 'Усходні калідор',
       date: '1968',
-      img: '../assets/images/marukhin_eastern-corridor(1966).jpg',
+      img: 'marukhin/marukhin_eastern-corridor(1966).jpg',
     },
     {
       title: 'Чакай мяне, Ганна',
       date: '1969',
-      img: '../assets/images/marukhin_wait_me_Ann(1969).jpg',
+      img: 'marukhin/marukhin_wait_me_Ann(1969).jpg',
     },
     {
       title: 'Черное солнце',
       date: '1970',
-      img: '../assets/images/marukhin_black_sun(1970).jpg',
+      img: 'marukhin/marukhin_black_sun(1970).jpg',
     },
     {
       title: 'Магіла льва',
       date: '1971',
-      img: '../assets/images/marukhin_lions tomb(1971).jpg',
+      img: 'marukhin/marukhin_lions tomb(1971).jpg',
     },
     {
       title: 'Хроніка ночы',
       date: '1972',
-      img: '../assets/images/marukhin_сhronicle_of_the_night(1972).jpg',
+      img: 'marukhin/marukhin_сhronicle_of_the_night(1972).jpg',
     },
     {
       title: 'Пункт адліку',
       date: '1979',
-      img: '../assets/images/marukhin_starting_point(1979).jpg',
+      img: 'marukhin/marukhin_starting_point(1979).jpg',
     },
   ],
 };

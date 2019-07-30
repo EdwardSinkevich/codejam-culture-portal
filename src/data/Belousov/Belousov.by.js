@@ -2,7 +2,7 @@ exports.frontmatter = {
   path: '/Belousov',
   name: 'Алег Паўлавіч Белавусаў',
   date: '16 лістапада 1945 - 26 сакавіка 2009',
-  img: '../assets/images/belousov.jpg',
+  img: 'belousov/belousov.jpg',
   videoId: '_bw31-y7Dg',
   vita: 'Беларускі аніматар, сцэнарыст, кінарэжысёр',
   authorOfTheDay: 'false',
@@ -50,32 +50,32 @@ exports.frontmatter = {
     {
       title: 'Вельмі стары чалавек з вялізнымі крыламі',
       date: '1990',
-      img: '../assets/images/belousov_very_old_man.jpg',
+      img: 'belousov/belousov_very_old_man.jpg',
     },
     {
       title: 'Куб',
       date: '1988',
-      img: '../assets/images/belousov_cube.jpg',
+      img: 'belousov/belousov_cube.jpg',
     },
     {
       title: 'Ладдзя роспачы',
       date: '1987',
-      img: '../assets/images/belousov_ladya_otchainiya.jpg',
+      img: 'belousov/belousov_ladya_otchainiya.jpg',
     },
     {
       title: 'Песня пра зубра',
       date: '1982',
-      img: '../assets/images/belousov_pesnia_o_zubre.jpg',
+      img: 'belousov/belousov_pesnia_o_zubre.jpg',
     },
     {
       title: 'Казка пра вясёлага клоуна',
       date: '1980',
-      img: '../assets/images/belousov_o_veselom_kloune.jpg',
+      img: 'belousov/belousov_o_veselom_kloune.jpg',
     },
     {
       title: 'Несцерка',
       date: '1980',
-      img: '../assets/images/belousov_nesterka.jpg',
+      img: 'belousov/belousov_nesterka.jpg',
     },
   ],
 };
