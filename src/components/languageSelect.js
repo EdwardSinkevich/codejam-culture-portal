@@ -1,6 +1,8 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import NativeSelect from '@material-ui/core/NativeSelect';
+import { Language } from 'gatsby-plugin-i18next';
+
 
 const useStyles = makeStyles(() => ({
   bgOption: {
@@ -23,26 +25,34 @@ const useNativeSelectStyles = makeStyles(() => ({
   },
 }));
 
-export default function LanguageSelect() {
+const LanguageSelect = ({ changeLng, lng, availableLngs }) => {
   const nativeSelectStyles = useNativeSelectStyles();
   const optionsStyles = useStyles();
-  const [language, setLanguage] = React.useState('RU');
 
-  const handleChange = () => (event) => {
-    setLanguage(event.target.value);
+  const handleChange = (event) => {
+    changeLng(event.target.value);
+    event.target.parentNode.value = lng;
   };
 
-  return (
+  const nativeSelect = (
     <NativeSelect
-      value={language}
-      onChange={handleChange('language')}
+      value={lng}
+      onChange={handleChange}
       name="language"
       classes={nativeSelectStyles}
       inputProps={{ 'aria-label': 'language' }}
     >
-      <option className={optionsStyles.bgOption} value="EN">EN</option>
-      <option className={optionsStyles.bgOption} value="RU">RU</option>
-      <option className={optionsStyles.bgOption} value="BY">BY</option>
+      {availableLngs.map((lang) => {
+        return (<option className={optionsStyles.bgOption} value={lang}>{lang.toUpperCase()}</option>)
+      })}
+
     </NativeSelect>
   );
+
+
+  return nativeSelect;
 }
+
+export default props => (
+  <Language>{lngProps => <LanguageSelect {...props} {...lngProps} />}</Language>
+);

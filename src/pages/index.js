@@ -1,13 +1,29 @@
 import React from 'react';
-import Layout from '../components/layout';
+import { graphql } from 'gatsby';
+import { I18n } from 'react-i18next';
+import { Link, withI18next } from 'gatsby-plugin-i18next';
 import SEO from '../components/seo';
-import Main from '../components/main/main';
+import Main from '../components/main';
+
+import Layout from '../components/layout';
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <Main />
-  </Layout>
+  <I18n>
+    {t => (
+      <Layout>
+        <SEO title="Home" />
+        <Main />
+      </Layout>
+    )}
+  </I18n>
 );
 
-export default IndexPage;
+export default withI18next()(IndexPage);
+
+export const query = graphql`
+  query($lng: String!) {
+    locales: allLocale(filter: { lng: { eq: $lng }, ns: { eq: "messages" } }) {
+      ...TranslationFragment
+    }
+  }
+`;

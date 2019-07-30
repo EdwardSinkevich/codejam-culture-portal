@@ -1,32 +1,40 @@
 module.exports = {
   siteMetadata: {
-    title: 'Film Directors of Belarus',
-    description: 'Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.',
-    author: '@gatsbyjs',
+    title: ``,
+    description: ``,
+    author: `team29`,
   },
+  pathPrefix: '/gatsby-i18n/gatsby-starter-i18next',
   plugins: [
-    {
-      resolve: 'gatsby-plugin-i18next',
-      options: {
-        availableLngs: ['en', 'ru', 'by'],
-        fallbackLng: 'en',
-      },
-    },
     'gatsby-plugin-react-helmet',
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'images',
-        path: `${__dirname}/src/images`,
+        name: 'gatsby-starter-lingui',
+        short_name: 'starter',
+        start_url: '/gatsby-i18n/gatsby-starter-i18next/',
+        background_color: '#663399',
+        theme_color: '#663399',
+        display: 'minimal-ui',
+        icon: 'src/images/movie-icon.png', // This path is relative to the root of the site.
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/locale`,
-        name: 'locale',
+        name: `locale`,
       },
     },
+    {
+      resolve: `gatsby-plugin-i18next`,
+      options: {
+        availableLngs: ['en', 'ru', 'be'],
+        fallbackLng: 'en',
+        debug: true,
+      },
+    },
+    'gatsby-plugin-offline',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -49,8 +57,5 @@ module.exports = {
         icon: `${__dirname}/src/images/movie-icon.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 };

@@ -2,7 +2,7 @@ exports.frontmatter = {
   path: '/Marukhin',
   name: 'Yuri Alexandrovich Marukhin',
   date: 'July 13, 1938 - December 20, 2001',
-  img: 'marukhin/marukhin.jpg',
+  img: '../assets/images/marukhin.jpg',
   videoId: '9SCgy424OKc',
   vita: 'Belarusian Soviet director, screenwriter, operator. Honored art worker of the Belarusian SSR (1974).',
   authorOfTheDay: 'false',
@@ -49,37 +49,37 @@ exports.frontmatter = {
     {
       title: 'Darling',
       date: '1965',
-      img: 'marukhin/marukhin_darling(1965).jpg',
+      img: '../assets/images/marukhin_darling(1965).jpg',
     },
     {
       title: 'Eastern Corridor',
       date: '1968',
-      img: 'marukhin/marukhin_eastern-corridor(1966).jpg',
+      img: '../assets/images/marukhin_eastern-corridor(1966).jpg',
     },
     {
       title: 'Wait for me, Ann',
       date: '1969',
-      img: 'marukhin/marukhin_wait_me_Ann(1969).jpg',
+      img: '../assets/images/marukhin_wait_me_Ann(1969).jpg',
     },
     {
       title: 'Black Sun',
       date: '1970',
-      img: 'marukhin/marukhin_black_sun(1970).jpg',
+      img: '../assets/images/marukhin_black_sun(1970).jpg',
     },
     {
       title: 'Lions tomb',
       date: '1971',
-      img: 'marukhin/marukhin_lions tomb(1971).jpg',
+      img: '../assets/images/marukhin_lions tomb(1971).jpg',
     },
     {
       title: 'Chronicle of the night',
       date: '1972',
-      img: 'marukhin/marukhin_сhronicle_of_the_night(1972).jpg',
+      img: '../assets/images/marukhin_сhronicle_of_the_night(1972).jpg',
     },
     {
       title: 'Starting point',
       date: '1979',
-      img: 'marukhin/marukhin_starting_point(1979).jpg',
+      img: '../assets/images/marukhin_starting_point(1979).jpg',
     },
   ],
 };

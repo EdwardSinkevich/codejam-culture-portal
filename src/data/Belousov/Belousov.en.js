@@ -2,7 +2,7 @@ exports.frontmatter = {
   path: '/Belousov',
   name: 'Oleg Pavlovich Belousov',
   date: 'November 13, 1938 - March 26, 2009',
-  img: 'belousov/belousov.jpg',
+  img: '../assets/images/belousov.jpg',
   videoId: '_bw31-y7Dg',
   vita: 'Belarusian Soviet director, screenwriter, operator. Honored art worker of the Belarusian SSR (1974).',
   authorOfTheDay: 'false',
@@ -50,32 +50,32 @@ exports.frontmatter = {
     {
       title: 'Very old man with huge wings',
       date: '1990',
-      img: 'belousov/belousov_very_old_man.jpg',
+      img: '../assets/images/belousov_very_old_man.jpg',
     },
     {
       title: 'Cube',
       date: '1988',
-      img: 'belousov/belousov_cube.jpg',
+      img: '../assets/images/belousov_cube.jpg',
     },
     {
       title: 'Rook of despair',
       date: '1987',
-      img: 'belousov/belousov_ladya_otchainiya.jpg',
+      img: '../assets/images/belousov_ladya_otchainiya.jpg',
     },
     {
       title: 'A Song about aurochs',
       date: '1982',
-      img: 'belousov/belousov_pesnia_o_zubre.jpg',
+      img: '../assets/images/belousov_pesnia_o_zubre.jpg',
     },
     {
       title: 'Tale of a funny clown',
       date: '1980',
-      img: 'belousov/belousov_o_veselom_kloune.jpg',
+      img: '../assets/images/belousov_o_veselom_kloune.jpg',
     },
     {
       title: 'Nesterka',
       date: '1980',
-      img: 'belousov/belousov_nesterka.jpg',
+      img: '../assets/images/belousov_nesterka.jpg',
     },
   ],
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
 import { makeStyles } from '@material-ui/core';
-import bgImage from '../../images/film-tapes.jpg';
+import bgImage from '../images/film-tapes.jpg';
 
 const useStyles = makeStyles(() => ({
   bgImage: {

@@ -2,7 +2,7 @@ exports.frontmatter = {
   path: '/Dobrolubov',
   name: 'Игорь Михайлович Добролюбов',
   date: '22 октября 1933 - 19 июля 2010',
-  img: 'dobrolubov/dobrolubov.jpg',
+  img: '../assets/images/dobrolubov.jpg',
   videoId: 'wNuYlYKSylU',
   vita: 'Белорусский советский кинорежиссёр, актёр, педагог и сценарист, народный артист Белорусской ССР (1985). Член КПСС с 1963 года',
   authorOfTheDay: 'true',
@@ -45,37 +45,37 @@ exports.frontmatter = {
     {
       title: 'Мама, я жив!',
       date: '1985',
-      img: 'dobrolubov/dobrolubov_mama_ya_zhiv.jpg',
+      img: '../assets/images/dobrolubov_mama_ya_zhiv.jpg',
     },
     {
       title: 'Белые росы',
       date: '1984',
-      img: 'dobrolubov/dobrolubov_belye_rosi.jpg',
+      img: '../assets/images/dobrolubov_belye_rosi.jpg',
     },
     {
       title: 'Расписание на послезавтра',
       date: '1978',
-      img: 'dobrolubov/dobrolubov_raspisanie_na_poslezavtra.jpg',
+      img: '../assets/images/dobrolubov_raspisanie_na_poslezavtra.jpg',
     },
     {
       title: 'По секрету всему свету',
       date: '1976',
-      img: 'dobrolubov/dobrolubov_po_secrety_vsemy_svety.jpg',
+      img: '../assets/images/dobrolubov_po_secrety_vsemy_svety.jpg',
     },
     {
       title: 'Братушка',
       date: '1975',
-      img: 'dobrolubov/dobrolubov_bratushka.jpg',
+      img: '../assets/images/dobrolubov_bratushka.jpg',
     },
     {
       title: 'Иван Макарович',
       date: '1968',
-      img: 'dobrolubov/dobrolubov_ivan_makarovich.jpg',
+      img: '../assets/images/dobrolubov_ivan_makarovich.jpg',
     },
     {
       title: 'Иду искать',
       date: '1966',
-      img: 'dobrolubov/dobrolubov_idu_iskat.jpg',
+      img: "../assets/images/dobrolubov_idu_iskat'.jpg",
     },
   ],
 };

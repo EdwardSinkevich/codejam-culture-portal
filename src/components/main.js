@@ -1,7 +1,9 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import HistoricalPortalDescription from '../historicalPortalDescription/historicalPortalDesc';
-import AuthorOfTheDay from '../authorOfTheDay/authorOfTheDay';
+import Container from '@material-ui/core/Container';
+import bgImage from '../images/film-tapes.jpg';
+import HistoricalPortalDescription from './historicalPortalDesc';
+import AuthorOfTheDay from './authorOfTheDay';
 
 const useStyles = makeStyles(() => ({
   mainSection: {
@@ -9,7 +11,7 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-export default function Main() {
+const Main = () => {
   const classes = useStyles();
   return (
     <>
@@ -17,8 +19,10 @@ export default function Main() {
         <HistoricalPortalDescription />
       </section>
       <section className={classes.mainSection}>
-        <AuthorOfTheDay />
+        {/* <AuthorOfTheDay /> */}
       </section>
     </>
   );
 }
+
+export default Main;

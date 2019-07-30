@@ -54,7 +54,7 @@ export default function AuthorOfTheDay() {
       edges {
         node {
           frontmatter {
-            path     
+            path
             name
             date
             vita
