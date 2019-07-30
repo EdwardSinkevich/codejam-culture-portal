@@ -1,29 +1,28 @@
 import React from 'react';
-import { graphql } from 'gatsby';
-import { I18n } from 'react-i18next';
-import { Link, withI18next } from 'gatsby-plugin-i18next';
-import SEO from '../components/seo';
-import Main from '../components/main';
+import { Link } from 'gatsby';
 
+import Button from '@material-ui/core/Button';
 import Layout from '../components/layout';
+import Image from '../components/image';
+import SEO from '../components/seo';
 
 const IndexPage = () => (
-  <I18n>
-    {t => (
-      <Layout>
-        <SEO title="Home" />
-        <Main />
-      </Layout>
-    )}
-  </I18n>
+  <Layout>
+    <SEO title="Home" />
+    <h1>Hi people</h1>
+    <p>Welcome to your new Gatsby site.</p>
+    <p>Now go build something great.</p>
+    <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
+      <Image />
+    </div>
+    <Link to="/page-2/">Go to page 2</Link>
+    <h2>Let's try out some buttons from material ui</h2>
+    <Button variant="contained" color="primary">
+      Hello World
+    </Button>
+    <p>As you can see, button module, imported from @material-ui/core works perfectly fine</p>
+    <p />
+  </Layout>
 );
 
-export default withI18next()(IndexPage);
-
-export const query = graphql`
-  query($lng: String!) {
-    locales: allLocale(filter: { lng: { eq: $lng }, ns: { eq: "messages" } }) {
-      ...TranslationFragment
-    }
-  }
-`;
+export default IndexPage;
