@@ -48,7 +48,7 @@ export default function Navigation({ siteTitle }) {
             </Link>
           </Button>
           <Button color="inherit">
-            <Link to="/directors/" className={classes.link}>
+            <Link to="/authors_list/" className={classes.link}>
               LIST OF DIRECTORS
             </Link>
           </Button>
