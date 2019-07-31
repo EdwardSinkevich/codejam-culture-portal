@@ -1,8 +1,9 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
 import Container from '@material-ui/core/Container';
-import { useStaticQuery, graphql, Link } from 'gatsby';
+import { Link } from 'gatsby';
 import { makeStyles } from '@material-ui/core';
+import PropTypes from 'prop-types';
 
 const useStyles = makeStyles(() => ({
   authOfTheDayDataWrapper: {
@@ -46,28 +47,12 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-export default function AuthorOfTheDay() {
+export default function AuthorOfTheDay({ data }) {
   const randomAuth = Math.floor(Math.random() * 5);
-  const data = useStaticQuery(graphql`
-    query {
-     allJavascriptFrontmatter(filter: { frontmatter: { lang: { eq: "ru" } } }) {
-      edges {
-        node {
-          frontmatter {
-            path     
-            name
-            date
-            vita
-            img
-          }
-        }
-      }
-    }
-      }
-  `);
   const authOfTheDayData = data.allJavascriptFrontmatter.edges[randomAuth].node.frontmatter;
   const authOfTheDayImage = require(`../../images/directors/${authOfTheDayData.img}`);
   const classes = useStyles();
+
   return (
     <Container fixed style={{ paddingTop: '60px' }}>
       <div className={classes.authOfTheDayDataWrapper}>
@@ -83,3 +68,11 @@ export default function AuthorOfTheDay() {
     </Container>
   );
 }
+
+AuthorOfTheDay.propTypes = {
+  data: PropTypes.object,
+};
+
+AuthorOfTheDay.defaultProps = {
+  data: {},
+};

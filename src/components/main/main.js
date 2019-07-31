@@ -1,5 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import PropTypes from 'prop-types';
 import HistoricalPortalDescription from '../historicalPortalDescription/historicalPortalDesc';
 import AuthorOfTheDay from '../authorOfTheDay/authorOfTheDay';
 
@@ -9,7 +10,7 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-export default function Main() {
+export default function Main({ data }) {
   const classes = useStyles();
   return (
     <>
@@ -17,8 +18,16 @@ export default function Main() {
         <HistoricalPortalDescription />
       </section>
       <section className={classes.mainSection}>
-        <AuthorOfTheDay />
+        <AuthorOfTheDay data={data} />
       </section>
     </>
   );
 }
+
+Main.propTypes = {
+  data: PropTypes.object,
+};
+
+Main.defaultProps = {
+  data: {},
+};
