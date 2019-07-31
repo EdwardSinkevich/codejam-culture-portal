@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import Layout from './layout';
 import SEO from './seo';
 
+import Map from './author/map';
 import Video from './author/video';
 import VerticalTimelines from './author/timeLine';
 import './author/author.css';
@@ -25,6 +26,7 @@ const authPage = ({ data }) => {
         <h3 className="authorVita">{authorsData.vita}</h3>
         <VerticalTimelines timelineData={authorsData.timelineData} />
         <Video videoId={authorsData.videoId} />
+        <Map />
       </main>
     </Layout>
   );
