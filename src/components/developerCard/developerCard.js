@@ -14,17 +14,17 @@ const useStyles = makeStyles({
   },
 });
 
-export default function DeveloperCard({ image, link }) {
-  const classes = useStyles();
-
+export default function DeveloperCard(props) {
+  // const classes = useStyles();
+console.log('img', props);
   return (
-    <Card className={classes.card}>
+    <Card >
       <CardActionArea>
         <CardMedia
           component="img"
           alt="Contemplative Reptile"
           height="320"
-          image={image}
+          image={props.image}
           title="Contemplative Reptile"
         />
         <CardContent>
@@ -35,7 +35,7 @@ export default function DeveloperCard({ image, link }) {
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          <span link={link}>GitHub Link</span>
+          <span link={props.link}>GitHub Link</span>
         </Button>
       </CardActions>
     </Card>

@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import DeveloperCard from '../developerCard/developerCard';
-
-
+import { get } from 'http';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -18,7 +17,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 export default function DevelopersTeam() {
-  const [spacing, setSpacing] = React.useState(2);
+  const [spacing, setSpacing] = useState(2);
   const classes = useStyles();
   const [developersState, setDevelopersState] = useState([
     { gitHubName: 'dobrynanikitich', gitHubImage: '', gitHubLink: ''},
@@ -29,28 +28,55 @@ export default function DevelopersTeam() {
     { gitHubName: 'dmakarevich', gitHubImage: '', gitHubLink: ''}
   ]);
 
+
   useEffect(() => {
-    const tempDevelopersState = [];
-    developersState.map(({ gitHubName, gitHubImage, gitHubLink }, idx) =>
-      fetch(`https://api.github.com/users/${gitHubName}`)
-        .then(res => res.json())
-        .then(({ avatar_url, html_url }) => {
-          tempDevelopersState.push({...developersState[idx], gitHubImage: avatar_url, gitHubLink: html_url});
-         })
-        )
-        setDevelopersState(tempDevelopersState);
-    }, [])
+    let tempDevelopersState;
+    async function getUsers(names) {
+      let jobs = [];
+
+      for(let name of names) {
+        let job = fetch(`https://api.github.com/users/${name.gitHubName}`).then(
+          successResponse => {
+            if (successResponse.status != 200) {
+              return null;
+            } else {
+              return successResponse.json().then(json => {
+                const newDev = {...name, gitHubImage: json.avatar_url, gitHubLink: json.html_url};
+                return newDev;
+              });
+              // return successResponse.json();
+            }
+          },
+          failResponse => {
+            return null;
+          }
+        );
+        jobs.push(job);
+      }
+
+      let results = await Promise.all(jobs);
+
+      // console.log(results);
+
+      return results;
+    }
+
+
+     getUsers([...developersState]).then(data => {
+      setDevelopersState(data);
+    }
+    );
+
+  }, []);
 
   return (
     <Grid container className={classes.root} spacing={2}>
       <Grid item xs={12}>
         <Grid container justify="center" spacing={spacing}>
-          {console.log('work')}
           {developersState.map(developer => {
-            console.log('its developer', developer);
             return (
               <Grid key={developer.gitHubName} item>
-                <DeveloperCard image={developer.gitHubImage} link={gitHubLink} />
+                <DeveloperCard image={developer.gitHubImage} link={developer.gitHubLink} />
               </Grid>
             )
           })}
