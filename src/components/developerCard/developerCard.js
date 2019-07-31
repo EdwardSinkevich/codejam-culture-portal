@@ -10,21 +10,21 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   card: {
-    maxWidth: 250,
+    maxWidth: 230,
   },
 });
 
-export default function DeveloperCard(props) {
-  // const classes = useStyles();
-console.log('img', props);
+export default function DeveloperCard({ image, link }) {
+  const classes = useStyles();
+
   return (
-    <Card >
+    <Card className={classes.card}>
       <CardActionArea>
         <CardMedia
           component="img"
           alt="Contemplative Reptile"
           height="320"
-          image={props.image}
+          image={image}
           title="Contemplative Reptile"
         />
         <CardContent>
@@ -35,7 +35,7 @@ console.log('img', props);
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          <span link={props.link}>GitHub Link</span>
+          <span link={link}>GitHub Link</span>
         </Button>
       </CardActions>
     </Card>

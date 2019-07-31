@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import DeveloperCard from '../developerCard/developerCard';
-import { get } from 'http';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -12,7 +11,7 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(2),
   },
   card: {
-    maxWidth: 345,
+    maxWidth: 250,
   },
 }));
 
@@ -35,7 +34,7 @@ export default function DevelopersTeam() {
       let jobs = [];
 
       for(let name of names) {
-        let job = fetch(`https://api.github.com/users/${name.gitHubName}`).then(
+        let job = fetch(`https://api.github.com/users/${name.gitHubName}?client_id=52489756c9417a4f520d&client_secret=a7d3531dbea35461e57cf0fd810c52a9acf2e630`).then(
           successResponse => {
             if (successResponse.status != 200) {
               return null;
@@ -70,7 +69,7 @@ export default function DevelopersTeam() {
   }, []);
 
   return (
-    <Grid container className={classes.root} spacing={2}>
+    <Grid container className={classes.root} spacing={1}>
       <Grid item xs={12}>
         <Grid container justify="center" spacing={spacing}>
           {developersState.map(developer => {
