@@ -5,12 +5,26 @@ module.exports = {
     author: '@gatsbyjs',
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-i18next',
+      options: {
+        availableLngs: ['en', 'ru', 'by'],
+        fallbackLng: 'en',
+      },
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/locale`,
+        name: 'locale',
       },
     },
     {

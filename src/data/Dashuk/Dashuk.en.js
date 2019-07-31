@@ -45,7 +45,7 @@ exports.frontmatter = {
     {
       title: 'War has no female face',
       date: '1980',
-      img: '../assets/images/belousov_very_old_man.jpg',
+      img: 'daschuk/Serial_U_Voiny_Ne_Zhenskoje_Lico.jpg',
     },
   ],
 };

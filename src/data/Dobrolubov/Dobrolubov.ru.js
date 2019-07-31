@@ -45,37 +45,37 @@ exports.frontmatter = {
     {
       title: 'Мама, я жив!',
       date: '1985',
-      img: '../assets/images/dobrolubov_mama_ya_zhiv.jpg',
+      img: 'dobrolubov/dobrolubov_mama_ya_zhiv.jpg',
     },
     {
       title: 'Белые росы',
       date: '1984',
-      img: '../assets/images/dobrolubov_belye_rosi.jpg',
+      img: 'dobrolubov/dobrolubov_belye_rosi.jpg',
     },
     {
       title: 'Расписание на послезавтра',
       date: '1978',
-      img: '../assets/images/dobrolubov_raspisanie_na_poslezavtra.jpg',
+      img: 'dobrolubov/dobrolubov_raspisanie_na_poslezavtra.jpg',
     },
     {
       title: 'По секрету всему свету',
       date: '1976',
-      img: '../assets/images/dobrolubov_po_secrety_vsemy_svety.jpg',
+      img: 'dobrolubov/dobrolubov_po_secrety_vsemy_svety.jpg',
     },
     {
       title: 'Братушка',
       date: '1975',
-      img: '../assets/images/dobrolubov_bratushka.jpg',
+      img: 'dobrolubov/dobrolubov_bratushka.jpg',
     },
     {
       title: 'Иван Макарович',
       date: '1968',
-      img: '../assets/images/dobrolubov_ivan_makarovich.jpg',
+      img: 'dobrolubov/dobrolubov_ivan_makarovich.jpg',
     },
     {
       title: 'Иду искать',
       date: '1966',
-      img: "../assets/images/dobrolubov_idu_iskat'.jpg",
+      img: 'dobrolubov/dobrolubov_idu_iskat.jpg',
     },
   ],
 };

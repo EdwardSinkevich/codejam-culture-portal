@@ -45,7 +45,7 @@ exports.frontmatter = {
     {
       title: 'У вайны не жаночы твар',
       date: '1980',
-      img: '../assets/images/belousov_very_old_man.jpg',
+      img: 'daschuk/Serial_U_Voiny_Ne_Zhenskoje_Lico.jpg',
     },
   ],
 };
