@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -19,13 +19,38 @@ const useStyles = makeStyles({
     textDecoration: 'none',
     display: 'block'
   },
+  contribution: {
+    padding: '10px',
+    backgroundColor: '#008080',
+    textAlign: 'center',
+    color: 'white',
+    fontWeight: 'bold'
+  },
+  contributionBlock: {
+    height: '505px',
+    width: '230px'
+  }
 });
 
-export default function DeveloperCard({ image, link, gitname }) {
+export default function DeveloperCard({ image, link, gitname, contribution }) {
   const classes = useStyles();
+  const [isContributionOpen, setContributionState] = useState(
+    false
+);
 
   return (
     <Card className={classes.card}>
+      {isContributionOpen ? (
+      <CardActionArea className={classes.contributionBlock}>
+        <Typography>
+          <ul>
+            {contribution.map(task => (
+              <li>{task}</li>
+            ))}
+          </ul>
+        </Typography>
+      </CardActionArea>
+      ) : (
       <CardActionArea>
         <a className={classes.anchor} href={link} target="_blank">
           <CardMedia
@@ -42,9 +67,14 @@ export default function DeveloperCard({ image, link, gitname }) {
             </Typography>
           </CardContent>
         </a>
-      </CardActionArea>
+      </CardActionArea>)}
       <CardActionArea>
-          <a className={classes.anchor} href={link}>WORKLOG</a>
+          <a 
+            className={`${classes.anchor} ${classes.contribution}`} 
+            onClick={() => setContributionState(!isContributionOpen)}
+          >
+            {isContributionOpen ? 'Hide Contribution' : 'Show Contribution'}
+          </a>
       </CardActionArea>
     </Card>
   );

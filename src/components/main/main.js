@@ -8,6 +8,9 @@ const useStyles = makeStyles(() => ({
   mainSection: {
     background: '#E6E6FA',
   },
+  developersTeamWrapper: {
+    overflow: 'hidden',
+  }
 }));
 
 export default function Main() {
@@ -20,7 +23,7 @@ export default function Main() {
       <section className={classes.mainSection}>
         <AuthorOfTheDay />
       </section>
-      <section>
+      <section className={classes.developersTeamWrapper}>
         <DevelopersTeam />
       </section>
     </>

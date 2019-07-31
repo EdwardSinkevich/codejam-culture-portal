@@ -20,12 +20,12 @@ export default function DevelopersTeam() {
   const [spacing, setSpacing] = useState(2);
   const classes = useStyles();
   const [developersState, setDevelopersState] = useState([
-    { gitHubName: 'dobrynanikitich', gitHubImage: '', gitHubLink: ''},
-    { gitHubName: 'EdwardSinkevich', gitHubImage: '', gitHubLink: ''},
-    { gitHubName: 'IrynaZhadzinets', gitHubImage: '', gitHubLink: ''},
-    { gitHubName: 'scepanenka', gitHubImage: '', gitHubLink: ''},
-    { gitHubName: 'vadikmash', gitHubImage: '', gitHubLink: ''},
-    { gitHubName: 'dmakarevich', gitHubImage: '', gitHubLink: ''}
+    { gitHubName: 'dobrynanikitich', gitHubImage: '', gitHubLink: '', contribution: ['EXAMPLE', 'EXAMPLE', 'EXAMPLE', 'EXAMPLE', 'EXAMPLE'] },
+    { gitHubName: 'EdwardSinkevich', gitHubImage: '', gitHubLink: '', contribution: ['EXAMPLE', 'EXAMPLE', 'EXAMPLE', 'EXAMPLE', 'EXAMPLE'] },
+    { gitHubName: 'IrynaZhadzinets', gitHubImage: '', gitHubLink: '', contribution: ['EXAMPLE', 'EXAMPLE', 'EXAMPLE', 'EXAMPLE', 'EXAMPLE'] },
+    { gitHubName: 'scepanenka', gitHubImage: '', gitHubLink: '', contribution: ['EXAMPLE', 'EXAMPLE', 'EXAMPLE', 'EXAMPLE', 'EXAMPLE'] },
+    { gitHubName: 'vadikmash', gitHubImage: '', gitHubLink: '', contribution: ['EXAMPLE', 'EXAMPLE', 'EXAMPLE', 'EXAMPLE', 'EXAMPLE'] },
+    { gitHubName: 'dmakarevich', gitHubImage: '', gitHubLink: '', contribution: ['EXAMPLE', 'EXAMPLE', 'EXAMPLE', 'EXAMPLE', 'EXAMPLE'] }
   ]);
 
 
@@ -68,13 +68,12 @@ export default function DevelopersTeam() {
     <Grid container className={classes.root} spacing={1}>
       <Grid item xs={12}>
         <Grid container justify="center" spacing={spacing}>
-          {developersState.map(developer => {
-            return (
-              <Grid key={developer.gitHubName} item>
-                <DeveloperCard image={developer.gitHubImage} link={developer.gitHubLink} gitname={developer.gitHubName} />
+          {developersState.map(({ gitHubName, gitHubImage, gitHubLink, contribution }) => (
+              <Grid key={gitHubName} item>
+                <DeveloperCard image={gitHubImage} link={gitHubLink} gitname={gitHubName} contribution={contribution}/>
               </Grid>
             )
-          })}
+          )}
         </Grid>
       </Grid>
     </Grid>
