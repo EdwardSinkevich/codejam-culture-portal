@@ -35,7 +35,7 @@ export default function DevelopersTeam() {
       fetch(`https://api.github.com/users/${gitHubName}`)
         .then(res => res.json())
         .then(({ avatar_url, html_url }) => {
-          tempDevelopersState.push({...developersState[idx], gitHubImage: avatar_url, gitHubLink: html_url})
+          tempDevelopersState.push({...developersState[idx], gitHubImage: avatar_url, gitHubLink: html_url});
          })
         )
         setDevelopersState(tempDevelopersState);
@@ -45,11 +45,15 @@ export default function DevelopersTeam() {
     <Grid container className={classes.root} spacing={2}>
       <Grid item xs={12}>
         <Grid container justify="center" spacing={spacing}>
-          {developersState.map(developer => (
-            <Grid key={developer} item>
-              <DeveloperCard image={developer.gitHubImage} />
-            </Grid>
-          ))}
+          {console.log('work')}
+          {developersState.map(developer => {
+            console.log('its developer', developer);
+            return (
+              <Grid key={developer.gitHubName} item>
+                <DeveloperCard image={developer.gitHubImage} link={gitHubLink} />
+              </Grid>
+            )
+          })}
         </Grid>
       </Grid>
     </Grid>

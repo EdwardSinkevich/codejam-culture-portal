@@ -14,7 +14,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function DeveloperCard({ image }) {
+export default function DeveloperCard({ image, link }) {
   const classes = useStyles();
 
   return (
@@ -31,18 +31,11 @@ export default function DeveloperCard({ image }) {
           <Typography gutterBottom variant="h5" component="h2">
             Lizard
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-              Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-              across all continents except Antarctica
-          </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-            Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
+          <span link={link}>GitHub Link</span>
         </Button>
       </CardActions>
     </Card>
