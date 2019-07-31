@@ -20,7 +20,7 @@ export default function Main() {
       <section className={classes.mainSection}>
         <AuthorOfTheDay />
       </section>
-      <section className={classes.mainSection}>
+      <section>
         <DevelopersTeam />
       </section>
     </>

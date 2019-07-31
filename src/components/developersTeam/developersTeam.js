@@ -6,6 +6,7 @@ import DeveloperCard from '../developerCard/developerCard';
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
+    margin: theme.spacing(10, 0, 0, 0),
   },
   control: {
     padding: theme.spacing(2),
@@ -43,7 +44,6 @@ export default function DevelopersTeam() {
                 const newDev = {...name, gitHubImage: json.avatar_url, gitHubLink: json.html_url};
                 return newDev;
               });
-              // return successResponse.json();
             }
           },
           failResponse => {
@@ -53,13 +53,9 @@ export default function DevelopersTeam() {
         jobs.push(job);
       }
 
-      let results = await Promise.all(jobs);
-
-      // console.log(results);
-
+      const results = await Promise.all(jobs);
       return results;
     }
-
 
      getUsers([...developersState]).then(data => {
       setDevelopersState(data);
@@ -75,7 +71,7 @@ export default function DevelopersTeam() {
           {developersState.map(developer => {
             return (
               <Grid key={developer.gitHubName} item>
-                <DeveloperCard image={developer.gitHubImage} link={developer.gitHubLink} />
+                <DeveloperCard image={developer.gitHubImage} link={developer.gitHubLink} gitname={developer.gitHubName} />
               </Grid>
             )
           })}
