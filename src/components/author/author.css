@@ -47,7 +47,7 @@
 .leaflet-container {
   height: 400px;
   width: 800px;
-  margin: auto;
+  margin: 20px auto;
 }
 
 .leaflet-pane,
@@ -59,14 +59,14 @@
 
 @media screen and (max-width: 800px){
   .leaflet-container {
-      height: 50vw;
-      width: 100%;
-      overflow: hidden;
+    height: 50vw;
+    width: 100%;
+    overflow: hidden;
   }
 }
 
 @media only screen and (max-width : 480px) {
   .leaflet-container {
-      height: 80vw;
+    height: 80vw;
   }
 }
