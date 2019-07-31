@@ -1,0 +1,35 @@
+.authorName {
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+}
+
+.authorImage {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.authorImage img {
+  height: 300px;
+  border-radius: 10px;
+}
+
+.authorBirth {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.authorVita {
+  text-align: center;
+  font-size: 25px;
+}
+
+/* Timeline */
+
+.vertical-timeline-element-content,
+.vertical-timeline::before {
+  background: rgb(0, 128, 128, 0.1);
+}

@@ -5,19 +5,24 @@ import PropTypes from 'prop-types';
 import Layout from './layout';
 import SEO from './seo';
 
+import VerticalTimelines from './author/timeLine';
+import './author/author.css';
+
 const authPage = ({ data }) => {
   const authorsData = data.javascriptFrontmatter.frontmatter;
   const authorImage = require(`../images/directors/${authorsData.img}`);
-
-  const authorWorkImages = authorsData.work.map(work => require(`../images/directors/${work.img}`));
 
   return (
     <Layout>
       <SEO title="Author page" />
       <main>
-        <h1>{authorsData.name}</h1>
-        <img src={authorImage} alt="Author" />
-        <img src={authorWorkImages[0]} alt="Work" />
+        <h1 className="authorName">{authorsData.name}</h1>
+        <div className="authorImage">
+          <img src={authorImage} alt="Author" />
+        </div>
+        <h3 className="authorBirth">{authorsData.date}</h3>
+        <h3 className="authorVita">{authorsData.vita}</h3>
+        <VerticalTimelines timelineData={authorsData.timelineData} />
       </main>
     </Layout>
   );
