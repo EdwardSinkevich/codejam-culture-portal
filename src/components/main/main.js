@@ -3,11 +3,15 @@ import { makeStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 import HistoricalPortalDescription from '../historicalPortalDescription/historicalPortalDesc';
 import AuthorOfTheDay from '../authorOfTheDay/authorOfTheDay';
+import DevelopersTeam from '../developersTeam/developersTeam';
 
 const useStyles = makeStyles(() => ({
   mainSection: {
     background: '#E6E6FA',
   },
+  developersTeamWrapper: {
+    overflow: 'hidden',
+  }
 }));
 
 export default function Main({ data }) {
@@ -19,6 +23,9 @@ export default function Main({ data }) {
       </section>
       <section className={classes.mainSection}>
         <AuthorOfTheDay data={data} />
+      </section>
+      <section className={classes.developersTeamWrapper}>
+        <DevelopersTeam />
       </section>
     </>
   );
