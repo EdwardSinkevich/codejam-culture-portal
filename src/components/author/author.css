@@ -33,3 +33,10 @@
 .vertical-timeline::before {
   background: rgb(0, 128, 128, 0.1);
 }
+
+/* Video */
+
+.videoOverlay {
+  display: flex;
+  justify-content: center;
+}

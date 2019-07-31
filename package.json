@@ -24,6 +24,8 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "react-i18next": "^10.11.4",
+    "react-modal": "^3.9.1",
+    "react-player": "^1.11.1",
     "react-vertical-timeline-component": "^2.4.0",
     "typescript": "^3.5.3"
   },
