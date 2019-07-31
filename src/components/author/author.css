@@ -28,6 +28,12 @@
   font-size: 25px;
 }
 
+.authorTitle {
+  display: flex;
+  justify-content: center;
+  color: rgb(0, 128, 128);
+}
+
 /* Timeline */
 
 .vertical-timeline-element-content,
@@ -40,6 +46,16 @@
 .videoOverlay {
   display: flex;
   justify-content: center;
+}
+
+.MuiButtonBase-root.openModal {
+  margin-bottom: 20px;
+  background-color: rgb(0, 128, 128);
+  color: white;
+}
+
+.MuiButton-contained:hover {
+  color: rgb(0, 128, 128);
 }
 
 /* Map */

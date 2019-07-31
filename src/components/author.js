@@ -25,9 +25,13 @@ const authPage = ({ data }) => {
         </div>
         <h3 className="authorBirth">{authorsData.date}</h3>
         <h3 className="authorVita">{authorsData.vita}</h3>
+        <h2 className="authorTitle">Временная линия</h2>
         <VerticalTimelines timelineData={authorsData.timelineData} />
+        <h2 className="authorTitle">Видео</h2>
         <Video videoId={authorsData.videoId} />
+        <h2 className="authorTitle">Галерея</h2>
         <PhotoGallery galleryWork={authorsData.work} />
+        <h2 className="authorTitle">Карта</h2>
         <Map />
       </main>
     </Layout>

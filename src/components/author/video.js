@@ -40,8 +40,8 @@ class Video extends React.Component {
     const urlVideo = `https://www.youtube.com/watch?v=${this.props.videoId}`;
     return (
       <div className="videoOverlay">
-        <Button class="openModal" onClick={this.openModal} variant="contained">
-          Open Modal
+        <Button className="openModal" onClick={this.openModal} variant="contained">
+          Смотреть видео
         </Button>
         <Modal
           isOpen={this.state.modalIsOpen}
