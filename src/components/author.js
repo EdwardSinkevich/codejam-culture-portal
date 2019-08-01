@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import Layout from './layout';
 import SEO from './seo';
 
-import Map from './author/map';
+import MapComponent from './author/map';
 import Video from './author/video';
 import PhotoGallery from './author/photoGallery';
 import VerticalTimelines from './author/timeLine';
@@ -32,7 +32,7 @@ const authPage = ({ data }) => {
         <h2 className="authorTitle">Галерея</h2>
         <PhotoGallery galleryWork={authorsData.work} />
         <h2 className="authorTitle">Карта</h2>
-        <Map />
+        <MapComponent />
       </main>
     </Layout>
   );
