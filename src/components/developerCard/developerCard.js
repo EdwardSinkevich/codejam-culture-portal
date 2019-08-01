@@ -28,7 +28,7 @@ const useStyles = makeStyles({
     fontWeight: 'bold',
   },
   contributionBlock: {
-    height: '505px',
+    height: '421px',
     width: '230px',
   },
 });
@@ -45,24 +45,22 @@ export default function DeveloperCard({
     <Card className={classes.card}>
       {isContributionOpen ? (
         <CardActionArea className={classes.contributionBlock}>
-          <Typography>
-            <ul>
-              {contribution.map(task => (
-                <li>{task}</li>
-              ))}
-            </ul>
-          </Typography>
+          <ul>
+            {contribution.map(task => (
+              <li key={`${gitname}-${task}`}>{task}</li>
+            ))}
+          </ul>
         </CardActionArea>
       ) : (
         <CardActionArea>
           <a className={classes.anchor} href={link} target="_blank">
             <CardMedia
-              component="img"
-              alt={gitname}
-              height="320"
-              image={image}
+              component="picture"
               title={gitname}
-            />
+              height="320"
+            >
+              <img src={image} alt={gitname}/>
+            </CardMedia>
             <CardContent>
               <Typography className={classes.content} gutterBottom variant="h6">
                 <div>
@@ -76,15 +74,13 @@ export default function DeveloperCard({
           </a>
         </CardActionArea>
       )}
-      <CardActionArea>
-        <button
-          className={classes.contribution}
-          onClick={() => setContributionState(!isContributionOpen)}
-          type="submit"
-        >
-          {isContributionOpen ? 'Hide Contribution' : 'Show Contribution'}
-        </button>
-      </CardActionArea>
+      <button
+        className={classes.contribution}
+        onClick={() => setContributionState(!isContributionOpen)}
+        type="submit"
+      >
+        {isContributionOpen ? 'Hide Contribution' : 'Show Contribution'}
+      </button>
     </Card>
   );
 }
