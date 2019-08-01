@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import id from 'react-id-generator';
 
 let LeafletMap;
 let TileLayer;
@@ -16,10 +18,19 @@ class MapComponent extends React.Component {
 
   render() {
     if (LeafletMap && TileLayer && Marker && Popup) {
+      const { markerTimeline } = this.props;
+      const Places = markerTimeline.filter(
+        place => place.width && place.length,
+      );
+      const Markers = Places.map(places => (
+        <Marker key={id()} position={[places.width, places.length]}>
+          <Popup>{places.text}</Popup>
+        </Marker>
+      ));
       const result = (
         <LeafletMap
-          center={[10, 5]}
-          zoom={6}
+          center={[Places[0].width, Places[0].length]}
+          zoom={12}
           maxZoom={18}
           attributionControl
           zoomControl
@@ -32,16 +43,20 @@ class MapComponent extends React.Component {
           <TileLayer
             url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"
           />
-          <Marker position={[10, 5]}>
-            <Popup>
-              Very intresting info
-            </Popup>
-          </Marker>
+          {Markers}
         </LeafletMap>
       );
       return result;
     } return null;
   }
 }
+
+MapComponent.propTypes = {
+  markerTimeline: PropTypes.array,
+};
+
+MapComponent.defaultProps = {
+  markerTimeline: [],
+};
 
 export default MapComponent;

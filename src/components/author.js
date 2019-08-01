@@ -32,7 +32,7 @@ const authPage = ({ data }) => {
         <h2 className="authorTitle">Галерея</h2>
         <PhotoGallery galleryWork={authorsData.work} />
         <h2 className="authorTitle">Карта</h2>
-        <MapComponent />
+        <MapComponent markerTimeline={authorsData.timelineData} />
       </main>
     </Layout>
   );
@@ -64,6 +64,8 @@ export const query = graphql`
         videoId
         birthPlace
         timelineData {
+          width
+          length
           date
           text
         }

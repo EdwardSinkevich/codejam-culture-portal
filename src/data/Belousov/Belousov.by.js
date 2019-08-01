@@ -3,13 +3,15 @@ exports.frontmatter = {
   name: 'Алег Паўлавіч Белавусаў',
   date: '16 лістапада 1945 - 26 сакавіка 2009',
   img: 'belousov/belousov.jpg',
-  videoId: '_bw31-y7Dg',
+  videoId: '3BPv3UWiazw',
   vita: 'Беларускі аніматар, сцэнарыст, кінарэжысёр',
   authorOfTheDay: 'false',
   lang: 'by',
   birthPlace: 'г. Слуцк, Мінская вобласць',
   timelineData: [
     {
+      width: 53.8939019,
+      length: 27.5438722,
       date: '1966',
       text:
                 'Скончыў Беларускі дзяржаўны ўніверсітэт.',

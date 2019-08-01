@@ -3,13 +3,15 @@ exports.frontmatter = {
   name: 'Олег Павлович Белоусов',
   date: '13 ноября 1945 - 26 марта 2009',
   img: 'belousov/belousov.jpg',
-  videoId: '_bw31-y7Dg',
+  videoId: '3BPv3UWiazw',
   vita: 'Cоветский и белорусский художник-мультипликатор, сценарист, режиссёр',
   authorOfTheDay: 'false',
   lang: 'ru',
   birthPlace: 'г. Слуцк, Минская область',
   timelineData: [
     {
+      width: 53.8939019,
+      length: 27.5438722,
       date: '1966',
       text:
                 'Закончил Белорусский государственный университет.',
