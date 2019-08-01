@@ -14,6 +14,10 @@ const authorsList = ({ data }) => {
     <Layout>
       <SEO title="Authors list" />
       <main>
+        <input
+          type="search"
+          placeholder="Search directors"
+        />
         <List>
           {
             authorsListData.map(authorInfo => <li key={authorInfo.node.id}>{ authorInfo.node.frontmatter.name }</li>)
