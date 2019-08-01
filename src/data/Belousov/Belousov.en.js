@@ -10,6 +10,8 @@ exports.frontmatter = {
   birthPlace: 'Slutsk, Minsk region',
   timelineData: [
     {
+      width: 53.8939019,
+      length: 27.5438722,
       date: '1966',
       text:
                 'Graduated from Belarusian State University.',
