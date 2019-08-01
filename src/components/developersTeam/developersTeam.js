@@ -21,22 +21,22 @@ export default function DevelopersTeam() {
   const classes = useStyles();
   const [developersState, setDevelopersState] = useState([
     {
-      gitHubName: 'dobrynanikitich', gitHubImage: '', gitHubLink: '', contribution: ['EXAMPLE', 'EXAMPLE', 'EXAMPLE', 'EXAMPLE', 'EXAMPLE'],
+      gitHubName: 'dobrynanikitich', gitHubImage: '', gitHubLink: '', contribution: ['EXAMPLE1', 'EXAMPLE2', 'EXAMPLE3', 'EXAMPLE4', 'EXAMPLE5'],
     },
     {
-      gitHubName: 'EdwardSinkevich', gitHubImage: '', gitHubLink: '', contribution: ['EXAMPLE', 'EXAMPLE', 'EXAMPLE', 'EXAMPLE', 'EXAMPLE'],
+      gitHubName: 'EdwardSinkevich', gitHubImage: '', gitHubLink: '', contribution: ['EXAMPLE1', 'EXAMPLE2', 'EXAMPLE3', 'EXAMPLE4', 'EXAMPLE5'],
     },
     {
-      gitHubName: 'IrynaZhadzinets', gitHubImage: '', gitHubLink: '', contribution: ['EXAMPLE', 'EXAMPLE', 'EXAMPLE', 'EXAMPLE', 'EXAMPLE'],
+      gitHubName: 'IrynaZhadzinets', gitHubImage: '', gitHubLink: '', contribution: ['EXAMPLE1', 'EXAMPLE2', 'EXAMPLE3', 'EXAMPLE4', 'EXAMPLE5'],
     },
     {
-      gitHubName: 'scepanenka', gitHubImage: '', gitHubLink: '', contribution: ['EXAMPLE', 'EXAMPLE', 'EXAMPLE', 'EXAMPLE', 'EXAMPLE'],
+      gitHubName: 'scepanenka', gitHubImage: '', gitHubLink: '', contribution: ['EXAMPLE1', 'EXAMPLE2', 'EXAMPLE3', 'EXAMPLE4', 'EXAMPLE5'],
     },
     {
-      gitHubName: 'vadikmash', gitHubImage: '', gitHubLink: '', contribution: ['EXAMPLE', 'EXAMPLE', 'EXAMPLE', 'EXAMPLE', 'EXAMPLE'],
+      gitHubName: 'vadikmash', gitHubImage: '', gitHubLink: '', contribution: ['EXAMPLE1', 'EXAMPLE2', 'EXAMPLE3', 'EXAMPLE4', 'EXAMPLE5'],
     },
     {
-      gitHubName: 'dmakarevich', gitHubImage: '', gitHubLink: '', contribution: ['EXAMPLE', 'EXAMPLE', 'EXAMPLE', 'EXAMPLE', 'EXAMPLE'],
+      gitHubName: 'dmakarevich', gitHubImage: '', gitHubLink: '', contribution: ['EXAMPLE1', 'EXAMPLE2', 'EXAMPLE3', 'EXAMPLE4', 'EXAMPLE5'],
     },
   ]);
 
