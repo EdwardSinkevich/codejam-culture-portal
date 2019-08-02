@@ -10,21 +10,12 @@ import LanguageSelect from '../languageSelect/languageSelect';
 
 const useStyles = makeStyles(theme => ({
   list: {
-    fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
-    fontWeight: '300',
-    lineHeight: '1.5em',
-    fontSize: '14px',
-    margin: 0,
-    paddingLeft: '0',
-    listStyle: 'none',
-    paddingTop: '0',
-    paddingBottom: '0',
     color: 'inherit',
+    padding: '0',
   },
   listItem: {
     float: 'left',
     color: 'inherit',
-    position: 'relative',
     display: 'block',
     width: 'auto',
     margin: '0',
@@ -43,15 +34,10 @@ const useStyles = makeStyles(theme => ({
   },
   navLink: {
     color: 'inherit',
-    position: 'relative',
     padding: '0.9375rem',
     fontWeight: '600',
-    fontSize: '14px',
-    textTransform: 'uppercase',
-    borderRadius: '3px',
+    fontSize: '15px',
     lineHeight: '20px',
-    textDecoration: 'none',
-    margin: '0px',
     display: 'inline-flex',
     '&:hover,&:focus': {
       color: 'inherit',

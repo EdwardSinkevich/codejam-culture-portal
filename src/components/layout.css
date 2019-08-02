@@ -42,6 +42,7 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  text-decoration: none;
 }
 a:active,
 a:hover {
@@ -198,8 +199,9 @@ html {
   box-sizing: inherit;
 }
 body {
+  min-width: 410px;
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: "Roboto", serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -622,3 +624,24 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #39393B;
+  border-radius: 38px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #404038;
+}
+
+::-webkit-scrollbar-track {
+  background: #e1e1e1;
+}
+
