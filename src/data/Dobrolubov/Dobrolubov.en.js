@@ -10,11 +10,15 @@ exports.frontmatter = {
   birthPlace: 'Novosibirsk city, Russian Federation',
   timelineData: [
     {
+      width: 53.8938988,
+      length: 27.5460609,
       date: '1956',
       text:
                 'Graduated from the Faculty of Journalism of the Belarusian State University..',
     },
     {
+      width: 53.8985812,
+      length: 27.5623388,
       date: '1956—1958',
       text:
                 'Actor of the Belarusian Republican Youth Theater.',
@@ -25,6 +29,8 @@ exports.frontmatter = {
                 'All-Russian State Institute of Cinematography named after Gerasimov (workshop of Mikhail Romm).',
     },
     {
+      width: 53.9275828,
+      length: 27.6276866,
       date: 'с 1963',
       text:
                 'Director of the Belarusfilm Studio.',
@@ -35,6 +41,8 @@ exports.frontmatter = {
                 'Secretary of the Board of the Union of Cinematographers of the BSSR.',
     },
     {
+      width: 53.933176,
+      length: 27.636822,
       date: '1993',
       text:
                 'Professor of the Institute of Modern Knowledge named A.Shirokov (Minsk).',

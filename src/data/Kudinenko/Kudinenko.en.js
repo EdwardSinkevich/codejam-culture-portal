@@ -10,11 +10,15 @@ exports.frontmatter = {
   birthPlace: ' Brest city',
   timelineData: [
     {
+      width: 50.4488824,
+      length: 30.4572542,
       date: '1988 - 1992',
       text:
                 'Studied at the Kiev Polytechnic Institute.',
     },
     {
+      width: 53.9226577,
+      length: 27.6010486,
       date: '1998',
       text:
                 'He graduated from the Belarusian State Academy of Arts in 1998 (workshop of Viktor Turov), then graduate school (2001). During his studies he received a scholarship to the special fund of the President of the Republic of Belarus to support talented young people who have creative achievements. Andrei Kudinenko is one of the last students of the legend of «Belarusfilm»  - Viktor Turov.',

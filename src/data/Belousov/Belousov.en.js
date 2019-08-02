@@ -3,13 +3,15 @@ exports.frontmatter = {
   name: 'Oleg Pavlovich Belousov',
   date: 'November 13, 1938 - March 26, 2009',
   img: 'belousov/belousov.jpg',
-  videoId: '_bw31-y7Dg',
+  videoId: '3BPv3UWiazw',
   vita: 'Belarusian Soviet director, screenwriter, operator. Honored art worker of the Belarusian SSR (1974).',
   authorOfTheDay: 'false',
   lang: 'en',
   birthPlace: 'Slutsk, Minsk region',
   timelineData: [
     {
+      width: 53.8939019,
+      length: 27.5438722,
       date: '1966',
       text:
                 'Graduated from Belarusian State University.',

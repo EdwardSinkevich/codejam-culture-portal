@@ -10,11 +10,15 @@ exports.frontmatter = {
   birthPlace: 'Fedorovka village, region of Ryazan',
   timelineData: [
     {
+      width: 53.9275828,
+      length: 27.6276866,
       date: '1960',
       text:
                 'Worked as cameraman on the «Belarusfilm» film studio.',
     },
     {
+      width: 55.83502,
+      length: 37.6351904,
       date: '1962',
       text:
                 'Graduated from the Faculty of Cameraman of the All-Union State Institute of Cinematography in Moscow (Leonid Kosmatov workshop).',

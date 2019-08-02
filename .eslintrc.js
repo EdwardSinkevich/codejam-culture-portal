@@ -26,5 +26,7 @@ module.exports = {
         "global-require": 0,
         "import/no-dynamic-require": 0,
         "react/forbid-prop-types": 0,
+        "linebreak-style": 0,
+        "react/jsx-no-target-blank": 0
     }
 };
