@@ -12,17 +12,17 @@ const authorsList = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Authors list" />
+      <SEO title="Directors list" />
       <main className="searchWrapper">
+        <h2>Режисcёры Беларуси</h2>
         <input
           type="search"
-          placeholder="Search directors"
         />
         <List>
           {
             authorsListData.map(authorInfo => (
               <Link key={authorInfo.node.id} to={authorInfo.node.frontmatter.path}>
-                <li>{ authorInfo.node.frontmatter.name }</li>
+                <li>{ `${authorInfo.node.frontmatter.name}, ${authorInfo.node.frontmatter.birthPlace}` }</li>
               </Link>
             ))
           }
