@@ -11,7 +11,8 @@ const useStyles = makeStyles(() => ({
   },
   developersTeamWrapper: {
     overflow: 'hidden',
-  }
+    marginBottom: '30px',
+  },
 }));
 
 export default function Main({ data }) {
