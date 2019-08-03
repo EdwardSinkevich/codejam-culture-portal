@@ -19,7 +19,7 @@ const Layout = ({ children, data }) => {
 
   return (
     <>
-      <Navbar siteTitle={data.site.siteMetadata.title} data={data} />
+      <Navbar siteTitle={siteData.site.siteMetadata.title} data={data} />
       <main style={{ flexGrow: '1' }}>{children}</main>
       <Footer />
     </>
