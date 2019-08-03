@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import Navbar from './navbar/navbar';
+import Footer from './footer/footer';
 import './layout.css';
 
 const Layout = ({ children, data }) => {
@@ -19,15 +20,8 @@ const Layout = ({ children, data }) => {
   return (
     <>
       <Navbar siteTitle={siteData.site.siteMetadata.title} data={data} />
-      <main>{children}</main>
-      <footer>
-        ©
-        {' '}
-        {new Date().getFullYear()}
-    , Built with
-        {' '}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
+      <main style={{ flexGrow: '1' }}>{children}</main>
+      <Footer />
     </>
   );
 };
