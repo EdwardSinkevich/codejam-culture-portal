@@ -39,3 +39,7 @@ input[type=search]  {
 .searchWrapper h2 {
   text-align: center;
 }
+
+.searchWrapper > a:hover {
+	text-decoration: none;
+}
