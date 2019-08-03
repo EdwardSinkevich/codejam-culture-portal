@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import Header from './header/header';
+import Navbar from './navbar/navbar';
 import Footer from './footer/footer';
 import './layout.css';
 
@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Navbar siteTitle={data.site.siteMetadata.title} />
       <main style={{ flexGrow: '1' }}>{children}</main>
       <Footer />
     </>
