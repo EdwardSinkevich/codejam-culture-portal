@@ -8,7 +8,7 @@
 We evaluate ourselfs as the greatest and the most modest of all teams out there
 
 
-## WorkLog 
+## WorkLog
 
 *vadikmash*
 
@@ -20,7 +20,16 @@ We evaluate ourselfs as the greatest and the most modest of all teams out there
 
 | time spent | feature |
 |-----------|------------|
-| | |
+| 1h | implement header layout |
+| 2h | implement header select language menu |
+| 2h | implement home description section |
+| 2h | implement author of the day section |
+| 1h | implement basic layout for author page |
+| 1h | implement basic layout for authors list page |
+| 3h | import data to project via GraphQL |
+| 3h | implement adaptive header |
+| 2h | implement adaptive home |
+
 
 *irynazhadzinets*
 

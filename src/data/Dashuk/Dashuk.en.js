@@ -10,11 +10,15 @@ exports.frontmatter = {
   birthPlace: ' Valoki village, Khoinitsky district, Gomel region',
   timelineData: [
     {
+      width: 53.886864,
+      length: 27.5418905,
       date: '1960',
       text:
                 'Graduated from the Faculty of Journalism of the Belarusian State University. V.I. Lenin.',
     },
     {
+      width: 53.9275828,
+      length: 27.6276866,
       date: '1960',
       text:
                 'Works at the Belarusfilm studio: he was an administrator, an assistant cameraman, an assistant film director.',
