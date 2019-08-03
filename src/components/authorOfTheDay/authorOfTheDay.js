@@ -62,13 +62,14 @@ const useStyles = makeStyles(() => ({
 export default function AuthorOfTheDay({ data }) {
   const randomAuth = Math.floor(Math.random() * 5);
   const authOfTheDayData = data.allJavascriptFrontmatter.edges[randomAuth].node.frontmatter;
+  const locale = JSON.parse(data.locales.edges[0].node.data);
   const authOfTheDayImage = require(`../../images/directors/${authOfTheDayData.img}`);
   const classes = useStyles();
 
   return (
     <Container fixed>
       <div className={classes.authOfTheDayDataWrapper}>
-        <h3 className={classes.title}>Author Of The Day</h3>
+        <h3 className={classes.title}>{locale.authorOfTheDay}</h3>
         <div className={classes.authOfTheDayContent}>
           <div className={classes.description}>
             <h4 className={classes.name}>{authOfTheDayData.name}</h4>

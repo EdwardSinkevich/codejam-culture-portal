@@ -64,11 +64,13 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const Navbar = (props) => {
+const Navbar = ({ data, siteTitle }) => {
   const classes = useStyles();
+  const locale = JSON.parse(data.locales.edges[0].node.data);
   return (
     <Header
-      siteTitle={props.siteTitle}
+      siteTitle={locale.siteTitle}
+      data={data}
       rightLinks={(
         <List className={classes.list}>
           <ListItem className={classes.listItem}>
@@ -77,7 +79,7 @@ const Navbar = (props) => {
               className={classes.navLink}
               color="transparent"
             >
-              HOME
+              {locale.home.toUpperCase()}
             </Link>
           </ListItem>
           <ListItem className={classes.listItem}>
@@ -86,7 +88,7 @@ const Navbar = (props) => {
               className={classes.navLink}
               color="transparent"
             >
-              LIST OF DIRECTORS
+              {locale.directorsList.toUpperCase()}
             </Link>
           </ListItem>
           <ListItem className={classes.listItem}>
@@ -100,6 +102,7 @@ const Navbar = (props) => {
 
 Navbar.propTypes = {
   siteTitle: PropTypes.string,
+  data: PropTypes.object,
 };
 
 export default Navbar;
