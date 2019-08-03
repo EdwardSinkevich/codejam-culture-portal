@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import DeveloperCard from '../developerCard/developerCard';
@@ -16,7 +17,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function DevelopersTeam() {
+export default function DevelopersTeam({ data }) {
   const [spacing] = useState(2);
   const classes = useStyles();
   const [developersState, setDevelopersState] = useState([
@@ -74,7 +75,13 @@ export default function DevelopersTeam() {
             gitHubName, gitHubImage, gitHubLink, contribution,
           }) => (
             <Grid key={gitHubName} item>
-              <DeveloperCard image={gitHubImage} link={gitHubLink} gitname={gitHubName} contribution={contribution} />
+              <DeveloperCard
+                image={gitHubImage}
+                link={gitHubLink}
+                gitname={gitHubName}
+                contribution={contribution}
+                data={data}
+              />
             </Grid>
           ))}
         </Grid>
@@ -82,3 +89,11 @@ export default function DevelopersTeam() {
     </Grid>
   );
 }
+
+DevelopersTeam.propTypes = {
+  data: PropTypes.object,
+};
+
+DevelopersTeam.defaultProps = {
+  data: {},
+};

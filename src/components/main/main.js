@@ -1,6 +1,6 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
+import { makeStyles } from '@material-ui/core/styles';
 import HistoricalPortalDescription from '../historicalPortalDescription/historicalPortalDesc';
 import AuthorOfTheDay from '../authorOfTheDay/authorOfTheDay';
 import DevelopersTeam from '../developersTeam/developersTeam';
@@ -20,13 +20,13 @@ export default function Main({ data }) {
   return (
     <>
       <section className={classes.mainSection}>
-        <HistoricalPortalDescription />
+        <HistoricalPortalDescription data={data} />
       </section>
       <section className={classes.mainSection}>
         <AuthorOfTheDay data={data} />
       </section>
       <section className={classes.developersTeamWrapper}>
-        <DevelopersTeam />
+        <DevelopersTeam data={data} />
       </section>
     </>
   );

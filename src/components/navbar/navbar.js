@@ -87,6 +87,7 @@ const Navbar = ({ data, siteTitle }) => {
               to="/authors_list/"
               className={classes.navLink}
               color="transparent"
+              data={data}
             >
               {locale.directorsList.toUpperCase()}
             </Link>
@@ -103,6 +104,11 @@ const Navbar = ({ data, siteTitle }) => {
 Navbar.propTypes = {
   siteTitle: PropTypes.string,
   data: PropTypes.object,
+};
+
+Header.defaultProps = {
+  siteTitle: '',
+  data: {},
 };
 
 export default Navbar;

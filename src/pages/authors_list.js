@@ -11,7 +11,7 @@ const authorsList = ({ data }) => {
   const authorsListData = data.allJavascriptFrontmatter.edges;
 
   return (
-    <Layout>
+    <Layout data={data}>
       <SEO title="Authors list" />
       <main className="searchWrapper">
         <input

@@ -16,7 +16,7 @@ const authPage = ({ data }) => {
   const authorImage = require(`../images/directors/${authorsData.img}`);
 
   return (
-    <Layout>
+    <Layout data={data}>
       <SEO title="Author page" />
       <main>
         <h1 className="authorName">{authorsData.name}</h1>

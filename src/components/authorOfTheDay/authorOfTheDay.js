@@ -7,12 +7,14 @@ import PropTypes from 'prop-types';
 
 const useStyles = makeStyles(() => ({
   authOfTheDayContainer: {
-    padding: '60px 0',
+    padding: '60px 0px',
   },
   authOfTheDayDataWrapper: {
     border: '1px solid #008080',
     display: 'flex',
     flexDirection: 'column',
+    margin: '40px 0px',
+
   },
   title: {
     color: 'white',
@@ -79,7 +81,9 @@ export default function AuthorOfTheDay({ data }) {
           <img className={classes.img} src={authOfTheDayImage} alt="auth of the day" />
         </div>
         <Button className={classes.btn}>
-          <Link className={classes.link} to={authOfTheDayData.path}>Learn More</Link>
+          <Link className={classes.link} to={authOfTheDayData.path}>
+            {locale.learnMore}
+          </Link>
         </Button>
       </div>
     </Container>
