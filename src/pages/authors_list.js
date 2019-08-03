@@ -7,30 +7,70 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import './authors_list.css';
 
-const authorsList = ({ data }) => {
-  const authorsListData = data.allJavascriptFrontmatter.edges;
+class authorsList extends React.Component {
+  constructor({ data }) {
+    super({ data });
+    this.data = data;
+    this.state = { };
+    this.state.items = this.data.allJavascriptFrontmatter.edges ? this.data.allJavascriptFrontmatter.edges : [];
+    this.handleChange = this.handleChange.bind(this);
+  }
 
-  return (
-    <Layout data={data}>
-      <SEO title="Authors list" />
-      <main className="searchWrapper">
-        <input
-          type="search"
-          placeholder="Search directors"
-        />
-        <List>
-          {
-            authorsListData.map(authorInfo => (
-              <Link key={authorInfo.node.id} to={authorInfo.node.frontmatter.path}>
-                <li>{ authorInfo.node.frontmatter.name }</li>
-              </Link>
-            ))
-          }
-        </List>
-      </main>
-    </Layout>
-  );
-};
+  handleChange(event) {
+    if (!this.data.allJavascriptFrontmatter) return;
+    let list = this.data.allJavascriptFrontmatter.edges.filter((item) => {
+      if (!event.target.value) {
+        return true;
+      }
+      return item.node.frontmatter.name
+        .concat(item.node.frontmatter.birthPlace)
+        .toLowerCase()
+        .includes(event.target.value.toLowerCase());
+    });
+    if (!list.length) {
+      list = null;
+    }
+    global.console.log('list');
+    global.console.log(list);
+    this.setState({ items: list });
+  }
+
+  list() {
+    const authorsListData = this.state;
+    if (!authorsListData.items) {
+      return (
+        <li>Sorry, no result</li>
+      );
+    }
+    return (
+      authorsListData.items.map(authorInfo => (
+        <Link key={authorInfo.node.id} to={authorInfo.node.frontmatter.path}>
+          <li>{`${authorInfo.node.frontmatter.name}, ${authorInfo.node.frontmatter.birthPlace}`}</li>
+        </Link>
+      ))
+    );
+  }
+
+  render() {
+    return (
+      <Layout data={this.data}>
+        <SEO title="Authors list" />
+        <main className="searchWrapper">
+          <input
+            type="search"
+            placeholder="Search directors"
+            onChange={this.handleChange}
+          />
+          <List>
+            {
+              this.list()
+            }
+          </List>
+        </main>
+      </Layout>
+    );
+  }
+}
 
 authorsList.propTypes = {
   data: PropTypes.object,

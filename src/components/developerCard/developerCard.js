@@ -28,7 +28,7 @@ const useStyles = makeStyles({
     fontWeight: 'bold',
   },
   contributionBlock: {
-    height: '421px',
+    height: '420px',
     width: '230px',
   },
 });
