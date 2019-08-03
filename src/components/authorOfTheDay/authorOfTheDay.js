@@ -13,7 +13,7 @@ const useStyles = makeStyles(() => ({
     border: '1px solid #008080',
     display: 'flex',
     flexDirection: 'column',
-    margin: '40px 0px',
+    margin: '45px 0px',
 
   },
   title: {
