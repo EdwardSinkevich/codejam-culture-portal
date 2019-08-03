@@ -7,7 +7,7 @@ import SEO from '../components/seo';
 import Main from '../components/main/main';
 
 const IndexPage = ({ data }) => (
-  <Layout>
+  <Layout data={data}>
     <SEO title="Home" />
     <Main data={data} />
   </Layout>
@@ -32,7 +32,7 @@ export const query = graphql`
       edges {
         node {
           frontmatter {
-            path     
+            path
             name
             date
             vita

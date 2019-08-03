@@ -34,8 +34,9 @@ const useStyles = makeStyles({
 });
 
 export default function DeveloperCard({
-  image, link, gitname, contribution,
+  image, link, gitname, contribution, data
 }) {
+  const locale = JSON.parse(data.locales.edges[0].node.data);
   const classes = useStyles();
   const [isContributionOpen, setContributionState] = useState(
     false,
@@ -79,7 +80,7 @@ export default function DeveloperCard({
         onClick={() => setContributionState(!isContributionOpen)}
         type="submit"
       >
-        {isContributionOpen ? 'Hide Contribution' : 'Show Contribution'}
+        {isContributionOpen ? locale.hideContribution : locale.showContribution}
       </button>
     </Card>
   );
@@ -90,6 +91,7 @@ DeveloperCard.propTypes = {
   link: PropTypes.string,
   gitname: PropTypes.string,
   contribution: PropTypes.array,
+  data: PropTypes.object,
 };
 
 DeveloperCard.defaultProps = {
@@ -97,4 +99,5 @@ DeveloperCard.defaultProps = {
   link: '',
   gitname: '',
   contribution: [],
+  data: {},
 };

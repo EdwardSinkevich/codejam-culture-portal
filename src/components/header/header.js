@@ -7,7 +7,7 @@ import Hidden from '@material-ui/core/Hidden';
 import Drawer from '@material-ui/core/Drawer';
 import Menu from '@material-ui/icons/Menu';
 import { withStyles } from '@material-ui/styles';
-import { Link } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 
 
 const styles = () => ({
@@ -90,13 +90,16 @@ class Header extends React.Component {
   };
 
   render() {
-    const { rightLinks, classes, siteTitle } = this.props;
+    const { rightLinks, classes, siteTitle, data } = this.props;
+
+    const locale = JSON.parse(data.locales.edges[0].node.data);
+
     return (
       <AppBar className={classes.header}>
         <Toolbar className={classes.container}>
           <h1 className={classes.title}>
             <Link to="/" className={classes.link}>
-              {siteTitle}
+              {locale.siteTitle}
             </Link>
           </h1>
           <Hidden smDown implementation="css">
@@ -136,6 +139,11 @@ Header.propTypes = {
   rightLinks: PropTypes.node,
   classes: PropTypes.object.isRequired,
   siteTitle: PropTypes.string,
+  data: PropTypes.object,
+};
+
+Header.defaultProps = {
+  data: {},
 };
 
 export default withStyles(styles)(Header);

@@ -7,12 +7,14 @@ import PropTypes from 'prop-types';
 
 const useStyles = makeStyles(() => ({
   authOfTheDayContainer: {
-    padding: '60px 0',
+    padding: '60px 0px',
   },
   authOfTheDayDataWrapper: {
     border: '1px solid #008080',
     display: 'flex',
     flexDirection: 'column',
+    margin: '45px 0px',
+
   },
   title: {
     color: 'white',
@@ -62,13 +64,14 @@ const useStyles = makeStyles(() => ({
 export default function AuthorOfTheDay({ data }) {
   const randomAuth = Math.floor(Math.random() * 5);
   const authOfTheDayData = data.allJavascriptFrontmatter.edges[randomAuth].node.frontmatter;
+  const locale = JSON.parse(data.locales.edges[0].node.data);
   const authOfTheDayImage = require(`../../images/directors/${authOfTheDayData.img}`);
   const classes = useStyles();
 
   return (
     <Container fixed>
       <div className={classes.authOfTheDayDataWrapper}>
-        <h3 className={classes.title}>Author Of The Day</h3>
+        <h3 className={classes.title}>{locale.authorOfTheDay}</h3>
         <div className={classes.authOfTheDayContent}>
           <div className={classes.description}>
             <h4 className={classes.name}>{authOfTheDayData.name}</h4>
@@ -78,7 +81,9 @@ export default function AuthorOfTheDay({ data }) {
           <img className={classes.img} src={authOfTheDayImage} alt="auth of the day" />
         </div>
         <Button className={classes.btn}>
-          <Link className={classes.link} to={authOfTheDayData.path}>Learn More</Link>
+          <Link className={classes.link} to={authOfTheDayData.path}>
+            {locale.learnMore}
+          </Link>
         </Button>
       </div>
     </Container>

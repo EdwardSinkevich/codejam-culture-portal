@@ -53,7 +53,7 @@ class authorsList extends React.Component {
 
   render() {
     return (
-      <Layout>
+      <Layout data={this.data}>
         <SEO title="Authors list" />
         <main className="searchWrapper">
           <input
