@@ -24,6 +24,7 @@ const useStyles = makeStyles(() => ({
     alignItems: 'center',
   },
   title: {
+    textAlign: 'center',
     zIndex: '10',
     fontSize: '48px',
     lineHeight: '1.2',
@@ -31,7 +32,7 @@ const useStyles = makeStyles(() => ({
     color: '#fefefe',
   },
   historyContent: {
-    paddingTop: '80px',
+    paddingTop: '40px',
   },
   historyParagraph: {
     textIndent: '1.5em',

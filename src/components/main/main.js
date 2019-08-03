@@ -7,7 +7,7 @@ import DevelopersTeam from '../developersTeam/developersTeam';
 
 const useStyles = makeStyles(() => ({
   mainSection: {
-    background: '#E6E6FA',
+    background: '#F4F7F6',
   },
   developersTeamWrapper: {
     overflow: 'hidden',

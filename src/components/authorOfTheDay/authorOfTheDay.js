@@ -6,44 +6,56 @@ import { makeStyles } from '@material-ui/core';
 import PropTypes from 'prop-types';
 
 const useStyles = makeStyles(() => ({
+  authOfTheDayContainer: {
+    padding: '60px 0',
+  },
   authOfTheDayDataWrapper: {
-    display: 'grid',
-    gridTemplateColumns: '60% auto 30%',
-    gridTemplateAreas: '"title title title" "name name img" "date date img" "vita vita img" "btn btn img"',
     border: '1px solid #008080',
-    justifyItems: 'center',
-    alignItems: 'center',
+    display: 'flex',
+    flexDirection: 'column',
   },
   title: {
-    gridArea: 'title',
+    color: 'white',
+    lineHeight: '1.7',
     background: '#008080',
     width: '100%',
     textAlign: 'center',
   },
   name: {
-    gridArea: 'name',
+    marginBottom: '0.45rem',
   },
-  date: {
-    gridArea: 'date',
+  authOfTheDayContent: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
-  vita: {
-    gridArea: 'vita',
+  description: {
+    textAlign: 'center',
+    flexBasis: '65%',
+    '@media (max-width: 1280px)': {
+      flexBasis: '100%',
+    },
   },
   img: {
-    gridArea: 'img',
-    margin: '0',
-    maxHeight: ' 250px',
+    height: '220px',
+    borderRadius: '7px',
+    margin: '0 0 0 20px',
+    '@media (max-width: 1280px)': {
+      margin: '20px 0 0 0',
+    },
   },
   btn: {
-    gridArea: 'btn',
-    background: '#008080',
-    justifySelf: 'start',
-    borderRadius: '0',
-    alignSelf: 'end',
+    padding: '0',
+    marginTop: '20px',
   },
   link: {
     color: 'white',
     textDecoration: 'none',
+    background: '#008080',
+    lineHeight: '33px',
+    display: 'inline-block',
+    width: '100%',
   },
 }));
 
@@ -54,14 +66,18 @@ export default function AuthorOfTheDay({ data }) {
   const classes = useStyles();
 
   return (
-    <Container fixed style={{ paddingTop: '60px' }}>
+    <Container fixed>
       <div className={classes.authOfTheDayDataWrapper}>
         <h3 className={classes.title}>Author Of The Day</h3>
-        <h4 className={classes.name}>{authOfTheDayData.name}</h4>
-        <p className={classes.date}>{authOfTheDayData.date}</p>
-        <p className={classes.vita}>{authOfTheDayData.vita}</p>
-        <img className={classes.img} src={authOfTheDayImage} alt="auth of the day" />
-        <Button className={classes.btn} variant="contained">
+        <div className={classes.authOfTheDayContent}>
+          <div className={classes.description}>
+            <h4 className={classes.name}>{authOfTheDayData.name}</h4>
+            <p>{authOfTheDayData.date}</p>
+            <p>{authOfTheDayData.vita}</p>
+          </div>
+          <img className={classes.img} src={authOfTheDayImage} alt="auth of the day" />
+        </div>
+        <Button className={classes.btn}>
           <Link className={classes.link} to={authOfTheDayData.path}>Learn More</Link>
         </Button>
       </div>
