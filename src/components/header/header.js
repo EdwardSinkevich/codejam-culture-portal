@@ -98,7 +98,7 @@ class Header extends React.Component {
       <AppBar className={classes.header}>
         <Toolbar className={classes.container}>
           <h1 className={classes.title}>
-            <Link to="/" className={classes.link}>
+            <Link to={`/${window.localStorage.lng}/`} className={classes.link}>
               {locale.siteTitle}
             </Link>
           </h1>

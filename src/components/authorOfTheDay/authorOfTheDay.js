@@ -79,7 +79,7 @@ export default function AuthorOfTheDay({ data }) {
           <img className={classes.img} src={authOfTheDayImage} alt="auth of the day" />
         </div>
         <Button className={classes.btn}>
-          <Link className={classes.link} to={authOfTheDayData.path}>
+          <Link className={classes.link} to={`${window.localStorage.lng}${authOfTheDayData.path}`}>
             {locale.learnMore}
           </Link>
         </Button>

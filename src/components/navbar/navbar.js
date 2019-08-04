@@ -75,7 +75,7 @@ const Navbar = ({ data, siteTitle }) => {
         <List className={classes.list}>
           <ListItem className={classes.listItem}>
             <Link
-              to="/"
+              to={`/${window.localStorage.lng}/`}
               className={classes.navLink}
               color="transparent"
             >
@@ -84,7 +84,7 @@ const Navbar = ({ data, siteTitle }) => {
           </ListItem>
           <ListItem className={classes.listItem}>
             <Link
-              to="/authors_list/"
+              to={`${window.localStorage.lng}/authors_list/`}
               className={classes.navLink}
               color="transparent"
               data={data}

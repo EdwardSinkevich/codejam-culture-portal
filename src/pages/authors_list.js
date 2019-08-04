@@ -44,7 +44,7 @@ class authorsList extends React.Component {
     }
     return (
       authorsListData.items.map(authorInfo => (
-        <Link key={authorInfo.node.id} to={authorInfo.node.frontmatter.path}>
+        <Link key={authorInfo.node.id} to={`/${window.localStorage.lng}${authorInfo.node.frontmatter.path}`}>
           <li>{`${authorInfo.node.frontmatter.name}, ${authorInfo.node.frontmatter.birthPlace}`}</li>
         </Link>
       ))

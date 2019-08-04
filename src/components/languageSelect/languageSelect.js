@@ -50,9 +50,17 @@ const LanguageSelect = ({ changeLng, lng, availableLngs }) => {
   const nativeSelectStyles = useNativeSelectStyles();
   const optionsStyles = useStyles();
 
+  window.localStorage.lng = lng;
+
   const handleChange = (event) => {
     changeLng(event.target.value);
     event.target.parentNode.value = lng;
+
+    window.localStorage.lng = event.target.value;
+
+    const comp = new React.Component();
+
+    comp.setState();
   };
 
   return (
