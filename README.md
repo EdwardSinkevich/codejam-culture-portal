@@ -92,4 +92,4 @@ We evaluate ourselfs as the greatest and the most modest of all teams out there
 (0) -20 too primitive (ugly for 2019) design / UX
 
 #### Score calculation ####
-10 + 10 + 10 + 10 + 20 + 10 + 40 + 20 + 20 + 30 + 20 + (15 Portal has three languages on one page) + (10 confidence of the project presentation) = 225
+10 + 10 + 20 + 10 + 10 + 20 + 10 + 40 + 20 + 20 + (10 confidence of the project presentation) 30 + 20 + 10 = 240

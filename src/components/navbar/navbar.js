@@ -71,6 +71,7 @@ const Navbar = ({ data, lng }) => {
     <Header
       siteTitle={locale.siteTitle}
       data={data}
+      lng={lng}
       rightLinks={(
         <List className={classes.list}>
           <ListItem className={classes.listItem}>
