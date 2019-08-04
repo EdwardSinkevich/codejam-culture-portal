@@ -59,7 +59,7 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-export default function AuthorOfTheDay({ data }) {
+export default function AuthorOfTheDay({ data, lng }) {
   const randomAuth = Math.floor(Math.random() * 5);
   const authOfTheDayData = data.allJavascriptFrontmatter.edges[randomAuth].node.frontmatter;
   const locale = JSON.parse(data.locales.edges[0].node.data);
@@ -79,7 +79,7 @@ export default function AuthorOfTheDay({ data }) {
           <img className={classes.img} src={authOfTheDayImage} alt="auth of the day" />
         </div>
         <Button className={classes.btn}>
-          <Link className={classes.link} to={authOfTheDayData.path}>
+          <Link className={classes.link} to={lng + authOfTheDayData.path}>
             {locale.learnMore}
           </Link>
         </Button>

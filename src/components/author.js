@@ -1,10 +1,10 @@
 import React from 'react';
+import Container from '@material-ui/core/Container';
 import { withI18next } from 'gatsby-plugin-i18next';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import Layout from './layout';
 import SEO from './seo';
-import Container from '@material-ui/core/Container';
 
 import MapComponent from './author/map';
 import Video from './author/video';
@@ -13,13 +13,13 @@ import PhotoGallery from './author/photoGallery';
 import VerticalTimelines from './author/timeLine';
 import './author/author.css';
 
-const authPage = ({ data }) => {
+const authPage = ({ data, lng }) => {
   const locale = JSON.parse(data.locales.edges[0].node.data);
   const authorsData = data.javascriptFrontmatter.frontmatter;
   const authorImage = require(`../images/directors/${authorsData.img}`);
 
   return (
-    <Layout data={data}>
+    <Layout data={data} lng={lng}>
       <SEO title="Author page" />
       <Container>
         <h2 className="authorName">{authorsData.name}</h2>

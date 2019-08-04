@@ -44,7 +44,7 @@ class authorsList extends React.Component {
     }
     return (
       authorsListData.items.map(authorInfo => (
-        <Link key={authorInfo.node.id} to={authorInfo.node.frontmatter.path}>
+        <Link key={authorInfo.node.id} to={this.props.lng + authorInfo.node.frontmatter.path}>
           <li>{`${authorInfo.node.frontmatter.name}, ${authorInfo.node.frontmatter.birthPlace}`}</li>
         </Link>
       ))
@@ -53,7 +53,7 @@ class authorsList extends React.Component {
 
   render() {
     return (
-      <Layout data={this.data}>
+      <Layout data={this.data} lng={this.props.lng}>
         <SEO title="Authors list" />
         <section className="searchWrapper">
           <Container>
