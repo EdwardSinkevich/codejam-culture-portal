@@ -25,7 +25,7 @@ export default function DevelopersTeam({ data }) {
       gitHubName: 'dobrynanikitich', gitHubImage: '', gitHubLink: '', contribution: ['create JSON files with text, dates, pictures', 'create team section', 'add request to github API', 'create git auth file for keys', 'create footer section'],
     },
     {
-      gitHubName: 'EdwardSinkevich', gitHubImage: '', gitHubLink: '', contribution: ['basic layout', 'create header with navigation and language selector', 'create response feader section', 'create home page with desription', 'create film director of the day section', 'working on language section'],
+      gitHubName: 'EdwardSinkevich', gitHubImage: '', gitHubLink: '', contribution: ['basic layout', 'create header with navigation and language selector', 'implement responsive design', 'create home page with desription', 'create film director of the day section', 'working on language section'],
     },
     {
       gitHubName: 'IrynaZhadzinets', gitHubImage: '', gitHubLink: '', contribution: ['basic layout', 'create film directors page', 'create timeline feature', 'create overlay video feature', 'create photo gallery section'],
