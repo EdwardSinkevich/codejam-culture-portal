@@ -1,0 +1,44 @@
+input[type=search]  {
+  background: #edfded url(https://img.icons8.com/ios-glyphs/20/000000/search.png) no-repeat 9px center;
+	padding: 9px 10px 9px 32px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.searchWrapper {
+  padding-top: 60px;
+  margin: auto;
+}
+
+.searchWrapper li {
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.05);
+  background-image:
+    linear-gradient(
+      90deg,
+      rgb(0, 128, 128) 10px,
+      #EEE 10px,
+      #EEE 11px,
+      transparent 11px);
+  padding: 10px 20px 10px 25px;
+  border: 1px solid #CCC;
+  box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.5);
+  margin-bottom: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+	border-radius: 5px;
+}
+
+.searchWrapper li:hover {
+  box-shadow: 0 0 10px rgba(20,150,100,.5);
+  background-color: #eeeeff;
+}
+
+.searchWrapper h2 {
+  text-align: center;
+}
+
+.searchWrapper > a:hover {
+	text-decoration: none;
+}

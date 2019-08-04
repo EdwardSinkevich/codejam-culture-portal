@@ -1,28 +1,45 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import { graphql } from 'gatsby';
+import { withI18next } from 'gatsby-plugin-i18next';
+import PropTypes from 'prop-types';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import Main from '../components/main/main';
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
-import Button from '@material-ui/core/Button';
-
-const IndexPage = () => (
-  <Layout>
+const IndexPage = ({ data, lng }) => (
+  <Layout data={data} lng={lng}>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-    <h2>Let's try out some buttons from material ui</h2>
-    <Button variant="contained" color="primary">
-      Hello World
-    </Button>
-    <p>As you can see, button module, imported from @material-ui/core works perfectly fine</p>
-    <p></p>
+    <Main data={data} lng={lng} />
   </Layout>
-)
+);
 
-export default IndexPage
+IndexPage.propTypes = {
+  data: PropTypes.object,
+};
+
+IndexPage.defaultProps = {
+  data: {},
+};
+
+export default withI18next()(IndexPage);
+
+export const query = graphql`
+    query ($lng: String!) {
+    locales: allLocale(filter: { lng: { eq: $lng } }) {
+      ...TranslationFragment
+    }
+     allJavascriptFrontmatter(filter: { frontmatter: { lang: { eq: $lng } } }) {
+      edges {
+        node {
+          frontmatter {
+            path
+            name
+            date
+            vita
+            img
+          }
+        }
+      }
+    }
+   }
+`;
