@@ -35,7 +35,11 @@ We evaluate ourselfs as the greatest and the most modest of all teams out there
 
 | time spent | feature |
 |-----------|------------|
-|  |  |
+| 3h | implement timeline for author's page |
+| 3h | implement video overlay for author's page |
+| 3h | implement photo gallery for author's page |
+| 3h | implement map for author's page |
+| 0.5h | implement table works for author's page |
 
 *scepanenka*
 
