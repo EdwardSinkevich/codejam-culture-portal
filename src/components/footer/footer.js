@@ -11,7 +11,7 @@ import materialUI from '../../images/materialUI.png';
 
 const useStyles = makeStyles(() => ({
   footer: {
-    backgroundColor: '#5F9EA0',
+    backgroundColor: '#b0e0e6',
   },
   footerContainer: {
     display: 'flex',
@@ -29,7 +29,6 @@ const useStyles = makeStyles(() => ({
   },
   technologyTitle: {
     fontSize: '1.5rem',
-    color: 'white',
   },
   technologyLogosContainer: {
     width: '100%',
