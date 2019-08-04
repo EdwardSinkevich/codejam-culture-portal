@@ -63,7 +63,7 @@
 .leaflet-container {
   height: 400px;
   width: 800px;
-  margin: 20px auto;
+  margin: 20px auto 80px auto;
 }
 
 .leaflet-pane,

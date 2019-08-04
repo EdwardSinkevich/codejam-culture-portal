@@ -3,6 +3,7 @@ import { withI18next } from 'gatsby-plugin-i18next';
 import { graphql, Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import List from '@material-ui/core/List';
+import Container from '@material-ui/core/Container';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import './authors_list.css';
@@ -55,16 +56,18 @@ class authorsList extends React.Component {
       <Layout data={this.data}>
         <SEO title="Authors list" />
         <section className="searchWrapper">
-          <input
-            type="search"
-            placeholder="Search directors"
-            onChange={this.handleChange}
-          />
-          <List>
-            {
-              this.list()
-            }
-          </List>
+          <Container>
+            <input
+              type="search"
+              placeholder="Search directors"
+              onChange={this.handleChange}
+            />
+            <List>
+              {
+                this.list()
+              }
+            </List>
+          </Container>
         </section>
       </Layout>
     );
