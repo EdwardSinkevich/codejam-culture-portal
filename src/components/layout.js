@@ -6,7 +6,7 @@ import Navbar from './navbar/navbar';
 import Footer from './footer/footer';
 import './layout.css';
 
-const Layout = ({ children, data }) => {
+const Layout = ({ children, data, lng }) => {
   const siteData = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -19,7 +19,7 @@ const Layout = ({ children, data }) => {
 
   return (
     <>
-      <Navbar siteTitle={siteData.site.siteMetadata.title} data={data} />
+      <Navbar siteTitle={siteData.site.siteMetadata.title} data={data} lng={lng} />
       <main style={{ flexGrow: '1' }}>{children}</main>
       <Footer />
     </>

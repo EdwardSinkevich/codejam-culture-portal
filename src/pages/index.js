@@ -6,10 +6,10 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Main from '../components/main/main';
 
-const IndexPage = ({ data }) => (
-  <Layout data={data}>
+const IndexPage = ({ data, lng }) => (
+  <Layout data={data} lng={lng}>
     <SEO title="Home" />
-    <Main data={data} />
+    <Main data={data} lng={lng} />
   </Layout>
 );
 

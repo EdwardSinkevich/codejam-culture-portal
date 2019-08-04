@@ -64,7 +64,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const Navbar = ({ data, siteTitle }) => {
+const Navbar = ({ data, lng }) => {
   const classes = useStyles();
   const locale = JSON.parse(data.locales.edges[0].node.data);
   return (
@@ -75,7 +75,7 @@ const Navbar = ({ data, siteTitle }) => {
         <List className={classes.list}>
           <ListItem className={classes.listItem}>
             <Link
-              to="/"
+              to={`${lng}/`}
               className={classes.navLink}
               color="transparent"
             >
@@ -84,7 +84,7 @@ const Navbar = ({ data, siteTitle }) => {
           </ListItem>
           <ListItem className={classes.listItem}>
             <Link
-              to="/authors_list/"
+              to={`${lng}/authors_list/`}
               className={classes.navLink}
               color="transparent"
               data={data}

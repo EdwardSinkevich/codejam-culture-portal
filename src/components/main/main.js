@@ -15,7 +15,7 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-export default function Main({ data }) {
+export default function Main({ data, lng }) {
   const classes = useStyles();
   return (
     <>
@@ -23,7 +23,7 @@ export default function Main({ data }) {
         <HistoricalPortalDescription data={data} />
       </section>
       <section className={classes.mainSection}>
-        <AuthorOfTheDay data={data} />
+        <AuthorOfTheDay data={data} lng={lng} />
       </section>
       <section className={classes.developersTeamWrapper}>
         <DevelopersTeam data={data} />
