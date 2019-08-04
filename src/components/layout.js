@@ -21,7 +21,7 @@ const Layout = ({ children, data }) => {
     <>
       <Navbar siteTitle={siteData.site.siteMetadata.title} data={data} />
       <main style={{ flexGrow: '1' }}>{children}</main>
-      <Footer />
+      <Footer data={data} />
     </>
   );
 };

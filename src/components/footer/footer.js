@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
@@ -47,15 +48,17 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-export default function Footer() {
+export default function Footer({ data }) {
   const classes = useStyles();
+
+  const locale = JSON.parse(data.locales.edges[0].node.data);
 
   return (
     <footer className={classes.footer}>
       <Container className={classes.footerContainer}>
         <div className={classes.technologyWrap}>
           <Typography className={classes.technologyTitle}>
-            Built with:
+            {locale.usedTechnologies}
           </Typography>
           <div className={classes.technologyLogosContainer}>
             <img alt="gatsby-logo" src={gatsbyLogo} className={classes.logo} />
@@ -71,10 +74,19 @@ export default function Footer() {
             ©
             {' '}
             {new Date().getFullYear()}
-            , Developed by Group 29
+            {', '}
+            {locale.createdBy}
           </Typography>
         </div>
       </Container>
     </footer>
   );
 }
+
+Footer.propTypes = {
+  data: PropTypes.object,
+};
+
+Footer.defaultProps = {
+  data: {},
+};
