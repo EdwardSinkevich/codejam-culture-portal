@@ -45,8 +45,9 @@ We evaluate ourselfs as the greatest and the most modest of all teams out there
 
 | time spent | feature |
 |-----------|------------|
-|  |  |
-
+| 2h | markup for list of directors page |
+| 3h | implement list of directors |
+| 4h | implement search by name and place of birth |
 *dobrynanikitich*
 
 | time spent | feature |
