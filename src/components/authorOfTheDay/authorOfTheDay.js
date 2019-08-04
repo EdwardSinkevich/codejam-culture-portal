@@ -7,14 +7,12 @@ import PropTypes from 'prop-types';
 
 const useStyles = makeStyles(() => ({
   authOfTheDayContainer: {
-    padding: '60px 0px',
+    padding: '60px 0',
   },
   authOfTheDayDataWrapper: {
     border: '1px solid #008080',
     display: 'flex',
     flexDirection: 'column',
-    margin: '45px 0px',
-
   },
   title: {
     color: 'white',
@@ -69,7 +67,7 @@ export default function AuthorOfTheDay({ data }) {
   const classes = useStyles();
 
   return (
-    <Container fixed>
+    <Container fixed className={classes.authOfTheDayContainer}>
       <div className={classes.authOfTheDayDataWrapper}>
         <h3 className={classes.title}>{locale.authorOfTheDay}</h3>
         <div className={classes.authOfTheDayContent}>

@@ -7,7 +7,7 @@ import DeveloperCard from '../developerCard/developerCard';
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    margin: theme.spacing(10, 0, 0, 0),
+    margin: theme.spacing(10, 0, 10, 0),
   },
   control: {
     padding: theme.spacing(2),

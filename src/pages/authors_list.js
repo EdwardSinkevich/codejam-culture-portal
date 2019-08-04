@@ -8,11 +8,12 @@ import SEO from '../components/seo';
 import './authors_list.css';
 
 class authorsList extends React.Component {
-  constructor({ data }) {
-    super({ data });
-    this.data = data;
-    this.state = { };
-    this.state.items = this.data.allJavascriptFrontmatter.edges ? this.data.allJavascriptFrontmatter.edges : [];
+  constructor(props) {
+    super(props);
+    this.data = props.data;
+    this.state = {
+      items: this.data.allJavascriptFrontmatter.edges ? this.data.allJavascriptFrontmatter.edges : [],
+    };
     this.handleChange = this.handleChange.bind(this);
   }
 
@@ -30,8 +31,6 @@ class authorsList extends React.Component {
     if (!list.length) {
       list = null;
     }
-    global.console.log('list');
-    global.console.log(list);
     this.setState({ items: list });
   }
 
@@ -55,7 +54,7 @@ class authorsList extends React.Component {
     return (
       <Layout data={this.data}>
         <SEO title="Authors list" />
-        <main className="searchWrapper">
+        <section className="searchWrapper">
           <input
             type="search"
             placeholder="Search directors"
@@ -66,7 +65,7 @@ class authorsList extends React.Component {
               this.list()
             }
           </List>
-        </main>
+        </section>
       </Layout>
     );
   }

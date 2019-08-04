@@ -6,8 +6,7 @@ input[type=search]  {
 }
 
 .searchWrapper {
-  padding-top: 60px;
-  width: 800px;
+  padding: 60px 20px;
   margin: auto;
 }
 

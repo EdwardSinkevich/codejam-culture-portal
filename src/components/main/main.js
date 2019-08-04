@@ -10,8 +10,8 @@ const useStyles = makeStyles(() => ({
     background: '#F4F7F6',
   },
   developersTeamWrapper: {
+    background: '#DEF2F1',
     overflow: 'hidden',
-    marginBottom: '30px',
   },
 }));
 

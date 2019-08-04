@@ -39,8 +39,8 @@ const useStyles = makeStyles(() => ({
   historyParagraph: {
     textIndent: '1.5em',
     textAlign: 'justify',
-    'line-height': '6vh',
-  }
+    'line-height': '5vh',
+  },
 }));
 
 const HistoricalPortalDescription = ({ data }) => {

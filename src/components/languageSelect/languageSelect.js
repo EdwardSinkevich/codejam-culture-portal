@@ -37,10 +37,9 @@ const useNativeSelectStyles = makeStyles(() => ({
     flexWrap: 'wrap',
   },
   select: {
-    padding: 0,
-    color: 'white',
-    fontSize: '17px',
-    'margin-top': '14px',
+    padding: '17px',
+    fontSize: '15px',
+    fontWeight: '600',
   },
   icon: {
     display: 'none',
@@ -56,23 +55,19 @@ const LanguageSelect = ({ changeLng, lng, availableLngs }) => {
     event.target.parentNode.value = lng;
   };
 
-  const nativeSelect = (
+  return (
     <NativeSelect
+      disableUnderline
       value={lng}
       onChange={handleChange}
       name="language"
       classes={nativeSelectStyles}
+      className={optionsStyles.navLink}
       inputProps={{ 'aria-label': 'language' }}
     >
-      {availableLngs.map((lang) => {
-        return (<option className={optionsStyles.bgOption} value={lang}>{lang.toUpperCase()}</option>)
-      })}
-
+      {availableLngs.map((lang, indx) => (<option key={indx} className={optionsStyles.bgOption} value={lang}>{lang.toUpperCase()}</option>))}
     </NativeSelect>
   );
-
-
-  return nativeSelect;
 };
 
 export default props => (

@@ -43,7 +43,7 @@ const useStyles = makeStyles(theme => ({
     fontSize: '14px',
     display: 'flex',
     justifyContent: 'end',
-  }
+  },
 }));
 
 export default function Footer() {
