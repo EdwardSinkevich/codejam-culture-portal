@@ -47,4 +47,7 @@ We evaluate ourselfs as the greatest and the most modest of all teams out there
 
 | time spent | feature |
 |-----------|------------|
-|  |  |
+| 10h | create JSON files with desription, images, pictures and video links |
+| 1h |  create basic layout developers team component |
+| 6h | implement github api request with creation auth keys |
+| 2h | implement footer section |
