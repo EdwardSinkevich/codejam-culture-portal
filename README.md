@@ -15,6 +15,11 @@ We evaluate ourselfs as the greatest and the most modest of all teams out there
 | time spent | feature |
 |-----------|------------|
 | 4h | create primary project structure |
+| 2h | spread tasks among team |
+| 1h | setup netlify |
+| 6h | implement lagguage switching |
+| 2h | fix lagnuage switching issues |
+
 
 *edwardsinkevich*
 
@@ -58,12 +63,12 @@ We evaluate ourselfs as the greatest and the most modest of all teams out there
 | 6h | implement github api request with creation auth keys |
 | 2h | implement footer section |
 
-## WorkLog
+## Self Evaluation
 
 ### Min scope - 40
 - [x] 10 Main page + page with a list of authors + author's page (only html);
 - [x] 10 Page with list of authors contains search widget;
-- [ ] 20 Portal has two languages;
+- [x] 20 Portal has two languages;
 
 ### Normal scope - 130
 - [x] 10 Author's page contains timeline;
@@ -75,10 +80,10 @@ We evaluate ourselfs as the greatest and the most modest of all teams out there
 - [x] 20 material-ui / bootstrap is used
 
 ### Extra scope - 70
-- [ ] 10 Confidence of the project presentation;
+- [x] 10 Confidence of the project presentation;
 - [x] 30 Project is made using gatsbyjs;
 - [x] 20 contentful / netlify cms is used for content management
-- [ ] 10 Portal has third language;
+- [x] 10 Portal has third language;
 
 ### Fines
 (0) -100 if there are less than 5 commits from each active team member. Everyone should merge their own PRs.
