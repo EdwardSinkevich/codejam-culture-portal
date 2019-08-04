@@ -7,6 +7,7 @@ import SEO from './seo';
 
 import MapComponent from './author/map';
 import Video from './author/video';
+import TableWork from './author/tableWork';
 import PhotoGallery from './author/photoGallery';
 import VerticalTimelines from './author/timeLine';
 import './author/author.css';
@@ -29,6 +30,8 @@ const authPage = ({ data }) => {
         <VerticalTimelines timelineData={authorsData.timelineData} />
         <h2 className="authorTitle">Видео</h2>
         <Video videoId={authorsData.videoId} />
+        <h2 className="authorTitle">Работы</h2>
+        <TableWork work={authorsData.work} />
         <h2 className="authorTitle">Галерея</h2>
         <PhotoGallery galleryWork={authorsData.work} />
         <h2 className="authorTitle">Карта</h2>
