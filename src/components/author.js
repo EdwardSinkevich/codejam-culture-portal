@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import Layout from './layout';
 import SEO from './seo';
+import Container from '@material-ui/core/Container';
 
 import MapComponent from './author/map';
 import Video from './author/video';
@@ -18,8 +19,8 @@ const authPage = ({ data }) => {
   return (
     <Layout data={data}>
       <SEO title="Author page" />
-      <main>
-        <h1 className="authorName">{authorsData.name}</h1>
+      <Container>
+        <h2 className="authorName">{authorsData.name}</h2>
         <div className="authorImage">
           <img src={authorImage} alt="Author" />
         </div>
@@ -33,7 +34,7 @@ const authPage = ({ data }) => {
         <PhotoGallery galleryWork={authorsData.work} />
         <h2 className="authorTitle">Карта</h2>
         <MapComponent markerTimeline={authorsData.timelineData} />
-      </main>
+      </Container>
     </Layout>
   );
 };
