@@ -22,22 +22,19 @@ export default function DevelopersTeam({ data }) {
   const classes = useStyles();
   const [developersState, setDevelopersState] = useState([
     {
-      gitHubName: 'dobrynanikitich', gitHubImage: '', gitHubLink: '', contribution: ['EXAMPLE1', 'EXAMPLE2', 'EXAMPLE3', 'EXAMPLE4', 'EXAMPLE5'],
+      gitHubName: 'dobrynanikitich', gitHubImage: '', gitHubLink: '', contribution: ['create JSON files with text, dates, pictures', 'create team section', 'add request to github API', 'create git auth file for keys', 'create footer section'],
     },
     {
-      gitHubName: 'EdwardSinkevich', gitHubImage: '', gitHubLink: '', contribution: ['EXAMPLE1', 'EXAMPLE2', 'EXAMPLE3', 'EXAMPLE4', 'EXAMPLE5'],
+      gitHubName: 'EdwardSinkevich', gitHubImage: '', gitHubLink: '', contribution: ['basic layout', 'create header with navigation and language selector', 'create response feader section', 'create home page with desription', 'create film director of the day section', 'working on language section'],
     },
     {
-      gitHubName: 'IrynaZhadzinets', gitHubImage: '', gitHubLink: '', contribution: ['EXAMPLE1', 'EXAMPLE2', 'EXAMPLE3', 'EXAMPLE4', 'EXAMPLE5'],
+      gitHubName: 'IrynaZhadzinets', gitHubImage: '', gitHubLink: '', contribution: ['basic layout', 'create film directors page', 'create timeline feature', 'create overlay video feature', 'create photo gallery section'],
     },
     {
-      gitHubName: 'scepanenka', gitHubImage: '', gitHubLink: '', contribution: ['EXAMPLE1', 'EXAMPLE2', 'EXAMPLE3', 'EXAMPLE4', 'EXAMPLE5'],
+      gitHubName: 'scepanenka', gitHubImage: '', gitHubLink: '', contribution: ['basic layout', 'create page with authors list', 'create search bar', 'create search list result', 'create search accordin to selected language'],
     },
     {
-      gitHubName: 'vadikmash', gitHubImage: '', gitHubLink: '', contribution: ['EXAMPLE1', 'EXAMPLE2', 'EXAMPLE3', 'EXAMPLE4', 'EXAMPLE5'],
-    },
-    {
-      gitHubName: 'dmakarevich', gitHubImage: '', gitHubLink: '', contribution: ['EXAMPLE1', 'EXAMPLE2', 'EXAMPLE3', 'EXAMPLE4', 'EXAMPLE5'],
+      gitHubName: 'vadikmash', gitHubImage: '', gitHubLink: '', contribution: ['create site with gatsby', 'install i18next', 'install material UI', 'set up ESLint', 'create README.md with info about project and worklogs', 'working on language section'],
     },
   ]);
 
